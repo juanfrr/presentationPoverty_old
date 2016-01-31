@@ -52,9 +52,9 @@
 \item \textit{Bolsa Fam\'ilia} is the largest Conditional Cash Transfer program in the world
 \begin{itemize}
 %\pause
-\item 50 million beneficiaries (vs 26.2 million for EITC in 2014)
+\item 30 million beneficiaries as of March 2015
 %\pause
-\item Individuals below annual income of US\$ 528 (US\$ 14,340 in the EITC)
+\item Individuals below annual income of US\$ 528
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -99,6 +99,7 @@
 \begin{itemize}
 \item Assets, demographics and income are self-reported to interviewers
 \item Interviewers may adjust the reported income
+\item Computer calculates the per capita income
 \end{itemize}
 %\pause
 \item Timing
@@ -106,11 +107,18 @@
 \item Interviews on any business day
 \item Updates at least once every two years
 \end{itemize}
+%\pause
+\item Audits
+\begin{itemize}
+\item Take away benefits
+\item Vary with the gov. budget
+\item Geographical variation
+\end{itemize}
 \end{itemize}	
 \end{frame}
 
 \begin{frame}
-\frametitle{Households with one Infant and 3 Members}
+\frametitle{Households with 3 Members \only<-4>{and 1 Child} \only<5->{after Last Reform}}
 \begin{center}
 \scalebox{0.7}{
 \begin{tikzpicture}[x=1.4,y=1.4]
@@ -120,7 +128,7 @@
 \draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
 
 %\pause
-\draw[red!70!black, -, very thick] (0,30) -- (70,100) ; % 45 degree line
+\only<-4>{\draw[red!70!black, -, very thick] (0,30) -- (70,100) ; % 45 degree line
 \draw[red!70!black, -, very thick] (70,100) -- (70,77.333) ; % notch
 \draw[red!70!black, -, very thick] (70,77.333) -- (140,147.33) ; % 45 degree line
 \draw[red!70!black, -, very thick] (140,147.33) -- (140,140) ; % notch
@@ -131,20 +139,20 @@
 \draw[black, -, dashed, thick] (70,0) -- (70,77.333) ;
 \node[black, align=center, below] at (70,0) {\scriptsize{70}};
 \draw[black, -, dashed, thick] (140,0) -- (140,140) ;
-\node[black, align=center, below] at (140,0) {\scriptsize{140}};
+\node[black, align=center, below] at (140,0) {\scriptsize{140}};}
 
-%\pause
-\draw[green!70!black, -, very thick] (0,34) -- (70,104) ; % 45 degree line
+\pause
+\only<2-4>{\draw[green!70!black, -, very thick] (0,34) -- (70,104) ; % 45 degree line
 \draw[green!70!black, -, very thick] (70,104) -- (70,80.666) ; % notch
 \draw[green!70!black, -, very thick] (70,80.666) -- (140,150.666) ; % 45 degree line
 \draw[green!70!black, -, very thick] (140,150.666) -- (140,140) ; % notch
 \draw[green!70!black, -, very thick] (140,140) -- (180, 180); % 45 degree line
 \draw[green!70!black, -, very thick] (165,90) -- (180, 90);
 \node[black, align=center, right] at (180,90) {04.11.2011};
-\node[black, align=right, left] at (0,34) {\scriptsize{34}};
+\node[black, align=right, left] at (0,34) {\scriptsize{34}};}
 
-%\pause
-\draw[blue!70!black, -] (0,70) -- (36,70) ; % flat line
+\pause
+\only<3-4>{\draw[blue!70!black, -] (0,70) -- (36,70) ; % flat line
 \draw[blue!70!black, -] (36,70) -- (70,104); % 45 degree line
 \draw[blue!70!black, -] (70,104) -- (70,80.666) ; % notch
 \draw[blue!70!black, -] (70,80.666) -- (140,150.666) ; % 45 degree line
@@ -153,10 +161,11 @@
 
 \draw[blue!70!black, -] (165,100) -- (180, 100);
 \node[black, align=center, right] at (180,100) {06.18.2012};
-\node[black, align=right, left] at (0,70) {\scriptsize{70}};
+%Note that this date should be adjusted to 11.18.2012 if child is older than 6 (but younger than 15)
+\node[black, align=right, left] at (0,70) {\scriptsize{70}};}
 
-%\pause
-\draw[black, -] (0,77) -- (39.666,77) ; % flat line
+\pause
+\only<4->{\draw[black, -] (0,77) -- (39.666,77) ; % flat line
 \draw[black, -] (39.666,77) -- (77,114.333); % 45 degree line
 \draw[black, -] (77,114.333) -- (77,88.666) ; % notch
 \draw[black, -] (77,88.666) -- (154,165.666) ; % 45 degree line
@@ -164,12 +173,21 @@
 \draw[black, -] (154,154) -- (180, 180); % 45 degree line
 
 \draw[black, -] (165,110) -- (180, 110);
-\node[black, align=center, right] at (180,110) {06.01.2014};
+\node[black, align=center, right] at (180,110) {\only<4>{06.01.2014}\only<5->{With Children}};
 \node[black, align=right, left] at (0,77) {\scriptsize{77}};
 \draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
 \node[black, align=center, below] at (77,0) {\scriptsize{77}};
 \draw[black, -, dashed, thick] (154,0) -- (154,154) ;
-\node[black, align=center, below] at (154,0) {\scriptsize{154}};
+\node[black, align=center, below] at (154,0) {\scriptsize{154}};}
+\pause
+\pause
+\only<5->{\draw[orange, -] (0,77) -- (51.333,77) ; % flat line
+\draw[orange, -] (51.333,77) -- (77,102.666); % 45 degree line
+\draw[orange, -] (77,102.666) -- (77,77) ; % notch
+\draw[orange, -] (77,77) -- (180, 180); % 45 degree line
+
+\draw[orange, -] (165,100) -- (180, 100);
+\node[black, align=center, right] at (180,100) {Without Children};}
 \end{tikzpicture}
 }
 \end{center}
@@ -194,80 +212,60 @@
 \item Monthly income 
 \item Individual level identifier
 \end{itemize}
-%\pause
-\item Among the Anti-Poverty households:
-\begin{itemize}
-\item 50\%  have at least one formal employee
-\item 30\% have a formal employee in the reporting month
-\end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Reported Income Distribution (Before)}
+\begin{table}[htbp]
+  \centering
+  \caption{Selection}
+    \input{tab_selection.tex}
+  \label{tab_selection}%
+\end{table}%
+\end{frame}
+
+\begin{frame}[label=ybar0]
+\frametitle{Reported Income Distribution (0 children)}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[height=2.7in]{fig_cadDomRs_Before.pdf}
+\includegraphics[height=2.7in]{Dom_060114_non_0_bin3p5.pdf}
+\end{center}
+\end{figure}
+\hyperlink{ybar0_sel}{\beamergotobutton{Link Selected Sample}}
+\end{frame}
+
+\begin{frame}[label=ybar2]
+\frametitle{Reported Income Distribution (2 children)}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=2.7in]{Dom_060114_non_2_bin3p5.pdf}
+\end{center}
+\end{figure}
+\hyperlink{ybar2_sel}{\beamergotobutton{Link to Selected Sample}}
+\end{frame}
+
+\begin{frame}
+\frametitle{3rd Party Reported Income Distribution (0 children)}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=2.7in]{Rais_060114_non_0_bin3p5.pdf}
 \end{center}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Reported Income Distribution (After)}
+\frametitle{3rd Party Reported Income Distribution (2 children)}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[height=2.7in]{fig_cadDomRs_After.pdf}
-\end{center}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{3rd Party Reported Income Distribution (Before)}
-\begin{figure}[H]
-\begin{center}
-\includegraphics[height=2.7in]{fig_raisRs_Before.pdf}
-\end{center}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{3rd Party Reported Income Distribution (After)}
-\begin{figure}[H]
-\begin{center}
-\includegraphics[height=2.7in]{fig_raisRs_After.pdf}
+\includegraphics[height=2.7in]{Rais_060114_non_2_bin3p5.pdf}
 \end{center}
 \end{figure}
 \end{frame}
 
 \section{Elasticities Estimation}
 
-\begin{frame}
-\frametitle{Bunching Method}
-%\pause
-\begin{itemize}
-\item Equivalent to the taxable income elasticity estimation
-\item Bunching on the kinks (Saez 2010) and notches (Kleven and Waseem 2013)
-\end{itemize}
-%\pause
-\begin{align*}
-U(\bar{y};\bar{e},n)=\bar{y}+B(\bar{y})-\frac{n}{1+1/\bar{e}}\left(\frac{\bar{y}}{n}\right)^{1+1/\bar{e}}
-\end{align*}
-\begin{itemize}
-\item $\bar{y}$: Reported Income
-\item $n$: Ability Type
-\item $\bar{e}=\frac{\partial \bar{y}}{\partial B'}\frac{1+B'}{\bar{y}}$: Elasticity of Reported Income
-\end{itemize}
-%\pause
-\begin{assum}
-\begin{enumerate}
-\item No income effect
-\item Iso-elasticity 
-\end{enumerate}
-\end{assum}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bunching Method}
+\begin{frame}[label=schedule]
+\frametitle{Program Schedule}
 \begin{center}
 \begin{tikzpicture}[x=.9,y=.9]
 \node[align=center, right] at (200,0) {$\bar{y}$};
@@ -275,67 +273,22 @@ U(\bar{y};\bar{e},n)=\bar{y}+B(\bar{y})-\frac{n}{1+1/\bar{e}}\left(\frac{\bar{y}
 \node[align=center, above] at (0,200) {$\bar{y}+B(\bar{y})$};
 \draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
 
-\draw[black, -] (0,37.333) -- (77,114.333); % 45 degree line
-\draw[black, -] (77,114.333) -- (77,88.666) ; % notch
-\draw[black, -] (77,88.666) -- (180,191.666) ; % 45 degree line
-\draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
-(0,88.666) -- (0,114.333)node [black,midway,xshift=-15pt] {\footnotesize $\Delta B$};
-
-
-\draw[black, -, dashed, thick] (77,114.333) -- (150,187.333) ;
+\draw[black, -, thick] (0,37.333) -- (77,114.333); % 45 degree line
+\draw[black, -, thick] (77,114.333) -- (77,88.666) ; % notch
+\draw[black, -, thick] (77,88.666) -- (154,165.666) ; % 45 degree line
+\draw[black, -, thick] (154,165.666) -- (154,154) ; % notch
+\draw[black, -, thick] (154,154) -- (180, 180); % 45 degree line
 
 \draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
-\node[black, align=center, below] at (77,0) {\scriptsize{$\bar{y}^*$}};
-
+\node[black, align=center, below] at (77,0) {\scriptsize{77}};
+\draw[black, -, dashed, thick] (154,0) -- (154,154) ;
+\node[black, align=center, below] at (154,0) {\scriptsize{154}};
 %\pause
-
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates { (36,89.666) (77,114.333) (96,149.666)};
-\node[align=center, above] at (96,149.666) {L};
+\draw[-, thick] (0,37.333) -- (10,37.333) ;
+\draw (10,37.333) arc (0:45:10);
+\node[black, align=center, right] at (10,42.333) {\scriptsize{$1+B'(\bar{y})=1$}};
 %\pause
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,111.333)  (120,131.666) (150,199)};
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,137)  (120,157.333) (140,224.666)};
-\node[align=center, above] at (150,199) {H};
-
-\draw[black, -, dashed, thick] (120,0) -- (120,157.333) ;
-\node[black, align=center, below] at (120,0) {\scriptsize{$\bar{y}^*+\Delta \bar{y}^*$}};
-%\pause
-\node[black, align=center, right] at (140,120){\scriptsize{1) $u^H(\bar{y}^*;\bar{e})=u^H(\bar{y}^*+\Delta \bar{y}^*;\bar{e})$}};
-%\pause
-\node[black, align=center, right] at (140,108){\scriptsize{2) $\bar{e}=f(\bar{y}^*, \Delta \bar{y}^*, \Delta B)$}};
-%\pause
-\node[black, align=center, right] at (140,96){\scriptsize{3) Get $\Delta \bar{y}^*$ from bunching and missing mass}};
-
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bunching}
-\begin{center}
-\begin{tikzpicture}[x=.9,y=.9]
-\node[align=center, right] at (200,0) {$\bar{y}$};
-\draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center, above] at (0,200) {$h(\bar{y})$};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
-
-\draw[black, -, thick] (0,50) -- (180,50); % 45 degree line
-\node[black, align=center, right] at (180,55) {\scriptsize{$h_0(\bar{y})$}};
-%\pause
-
-\draw[red, -, thick] (0,50) -- (77,50);
-\draw[red, -, very thick] (77,0) -- (77,200) ;
-\draw[red, -, thick] (77,0) -- (120,0) ;
-\draw[red, -, thick] (120,0) -- (120,50); 
-\draw[red, -, thick] (120,50) -- (180,50);
-\node[red, align=center, right] at (180,45) {\scriptsize{$h_1(\bar{y})$}};
-
-\node[red, align=center] at (98.5,25) {B};
-\node[red, align=center, right] at (77, 190) {B};
-
-\node[black, align=center, below] at (77,0) {\scriptsize{$\bar{y}^*$}};
-
-\node[black, align=center, below] at (120,0) {\scriptsize{$\bar{y}^*+\Delta \bar{y}^*$}};
-
+\node[black, align=center, right] at (170,100) {\scriptsize{$\bar{e}=\frac{\partial \bar{y}}{\partial B'}\frac{1+B'}{\bar{y}}$ is not recoverable}};
 \end{tikzpicture}
 \end{center}
 \end{frame}
@@ -494,59 +447,6 @@ pause
 %\pause
 \node[black, align=center, right] at (148,96){\scriptsize{3) Get $\Delta y^*$ empirically}};
 \node[black, align=center, right] at (148,84){\scriptsize{$\Rightarrow$ Two moments and two parameters}};
-
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Identification}
-%\pause
-\begin{assum}
-
-\begin{enumerate}
-\item Counterfactual distribution is smooth in the absence of notches
-\item Bunchers come from a continuous set
-\item Quasilinear and iso-elastic utility
-\end{enumerate}
-\end{assum}
-%\pause
-\begin{itemize}
-\item Problem: More structure than I wish.
-%\pause
-\item Potential Solutions: 
-\begin{itemize}
-\item Simulated Method of Moments
-\item Explore the variation coming from the reforms
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[label=schedule]
-\frametitle{Program Schedule}
-\begin{center}
-\begin{tikzpicture}[x=.9,y=.9]
-\node[align=center, right] at (200,0) {$\bar{y}$};
-\draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center, above] at (0,200) {$\bar{y}+B(\bar{y})$};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
-
-\draw[black, -, thick] (0,37.333) -- (77,114.333); % 45 degree line
-\draw[black, -, thick] (77,114.333) -- (77,88.666) ; % notch
-\draw[black, -, thick] (77,88.666) -- (154,165.666) ; % 45 degree line
-\draw[black, -, thick] (154,165.666) -- (154,154) ; % notch
-\draw[black, -, thick] (154,154) -- (180, 180); % 45 degree line
-
-\draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
-\node[black, align=center, below] at (77,0) {\scriptsize{77}};
-\draw[black, -, dashed, thick] (154,0) -- (154,154) ;
-\node[black, align=center, below] at (154,0) {\scriptsize{154}};
-%\pause
-\draw[-, thick] (0,37.333) -- (10,37.333) ;
-\draw (10,37.333) arc (0:45:10);
-\node[black, align=center, right] at (10,42.333) {\scriptsize{$1+B'(\bar{y})=1$}};
-%\pause
-\node[black, align=center, right] at (170,100) {\scriptsize{$\bar{e}=\frac{\partial \bar{y}}{\partial B'}\frac{1+B'}{\bar{y}}$ is not recoverable}};
 \end{tikzpicture}
 \end{center}
 \end{frame}
@@ -617,6 +517,119 @@ pause
 \end{tikzpicture}
 \end{center}
 \hyperlink{proof_relation}{\beamergotobutton{Link to Proof}}
+\end{frame}
+
+\begin{frame}[label=empirical]
+\frametitle{Empirical Strategy}
+\begin{itemize}
+\item $y_{jt}$: Income reported by household $j$ in period $t$.
+\pause
+\item $y^*_{jt}$: Latent income, so that $y_{jt}=\begin{cases}y^*_{jt}\ if\ y^*_{jt}>0\\
+0\ if\ y^*_{jt}\leq 0 \end{cases}$
+\pause
+\item $\Delta y_j = y_{jt_1}-y_{jt_0}$
+\pause
+\item $\delta \equiv med(\Delta y_j)$: Income bracket width
+\pause
+\begin{center}
+\scalebox{0.65}{
+\begin{tikzpicture}[x=1.5cm]
+\draw[black,-,thick,>=latex]
+(0,0) -- (10.5,0) node[below right] {$\scriptstyle$};
+
+\draw[black,thick] 
+( 0,0) -- ++(0,5pt) node[above] {$\scriptstyle 0$};
+\draw[black,thick] 
+( 1,0) -- ++(0,5pt) node[above] {$\scriptstyle \delta$};
+
+\foreach \Xc in {2,3}
+{
+  \draw[black,thick] 
+    ( \Xc,0) -- ++(0,5pt) node[above] {$\scriptstyle \Xc \delta$};
+}
+
+\foreach \Xc/\texto in {7/(I-3)\delta,8/(I-2)\delta,9/(I-1)\delta,10/I\delta}
+{
+  \draw[black,thick] 
+    ( \Xc,0) -- ++(0,5pt) node[above] {$\scriptstyle \texto$};
+}
+
+\foreach \Xc/\texto in {0.5/\frac{1}{2},1.5/\frac{3}{2},2.5/\frac{5}{2},3.5/\frac{7}{2}}
+{
+  \draw[black,thick] 
+    ( \Xc,-.2) -- ++(0,5pt) node[below] {$\scriptstyle \texto \delta$};
+}
+\foreach \Xc/\texto in {6.5/(I-\frac{7}{2}),7.5/(I-\frac{5}{2}),8.5/(I-\frac{3}{2}),9.5/(I-\frac{1}{2}),10.5/(I+\frac{1}{2})}
+{
+  \draw[black,thick] 
+    ( \Xc,-.2) -- ++(0,5pt) node[below] {$\scriptstyle \texto \delta$};
+}
+  \fill[black] 
+    ([xshift=5pt]0,-0.75)  
+      rectangle node[below] {\strut\small i=0} 
+    ([xshift=-5pt]0.5,-0.85);  
+\foreach \Xc/\Texto in {0.5/i=1,1.5/i=2,2.5/i=3}
+{
+  \fill[black] 
+    ([xshift=5pt]\Xc,-0.75)  
+      rectangle node[below] {\strut\small\Texto} 
+    ([xshift=-5pt]\Xc+1,-0.85);  
+}
+\foreach \Xc/\Texto in {6.5/i=I-3,7.5/i=I-2,8.5/i=I-1,9.5/i=I}
+{
+  \fill[black] 
+    ([xshift=5pt]\Xc,-0.75)  
+      rectangle node[below] {\strut\small\Texto} 
+    ([xshift=-5pt]\Xc+1,-0.85);  
+}
+\end{tikzpicture} 
+}
+\end{center}
+\item $d_{ij}=\begin{cases}1 & \text{if hh $j$ can report $0$, $i-1$ or $i$},\\
+0 & \text{otherwise.} \end{cases}$  ``intrinsic" occupation
+\pause
+\item $h_{ijt}=\begin{cases}1\ & \text{hh $j$ reports $i$ in $t$},\\
+0 & \text{otherwise.} \end{cases}$ ``equilibrium" occupation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label = identification1]
+\frametitle{Identifying $\eta_i=\frac{\partial h_i}{\partial(c_i-c_0)}\frac{c_i-c_0}{h_i}$ and $\mathcal{E}_i=\frac{\partial h_i}{\partial(c_i-c_{i-1})}\frac{c_i-c_{i-1}}{h_i}$}
+\begin{itemize}
+\item $y^*_{jt}=\sum_{i=1}^I d_{ij}(w_i*h_{i,j,t}+ w_{i-1}* h_{i-1,j,t})+u_{jt},$
+\pause
+\item $h_{ijt}=\begin{cases}1$ if $h_{ijt}^*>0\\
+0$ otherwise,$\end{cases}\ where\ h^*_{ijt}=f(\underbrace{(c_i-c_0),(c_i-c_{i-1})}_{X_{jt}})+\epsilon_{ijt},$
+\pause
+\item $E(h_{ijt}|X_{jt})=Prob(h_{ijt}^*=1|X_{jt})=Prob\Big(\epsilon_{ijt}>-f(X_{ijt})\Big)=1-G\Big(f(X_{ijt})\Big)$
+\pause
+\item $\Rightarrow h_{ijt}=1-G(f(X_{ijt}))+\nu_{ijt}$
+\pause
+\item $y^*_{jt}=\sum_{i=1}^I \beta_i d_{ij}ln(c_i-c_{i-1})_{jt}+\sum_{i=1}^I \gamma_i d_{ij}ln(c_i-c_{0})_{jt}+v_{jt}$\\
+\pause
+\item $d_{ij}$ defined empirically as a function of hh's composition, education, location and housing infrastructure.\hyperlink{intrinsic}{\beamergotobutton{Link to Intrinsic}}
+\pause
+\item $\frac{\beta_i}{w_i}=\eta_i\text{ and }\frac{\gamma_i}{\delta}=\eta_i$
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=identification2]
+\begin{block}
+
+\textbf{Identification Assumption:} Labor supply and Mis-reporting decisions are not correlated with unobservables that changed with the program schedule.
+\end{block}
+\pause
+\frametitle{Identifying $\eta_i=\frac{\partial h_i}{\partial(c_i-c_0)}\frac{c_i-c_0}{h_i}$ and $\mathcal{E}_i=\frac{\partial h_i}{\partial(c_i-c_{i-1})}\frac{c_i-c_{i-1}}{h_i}$}
+\begin{itemize}
+\item $v_{jt}=u_{jt}+\sum_{i=1}^I(\beta_i+\gamma_i)\nu_{ijt}*d_{ij}$
+\begin{block}
+
+\textbf{Tobit Assumption:} $u_{jt}\sim N(0,1)$
+\end{block}
+\item $L(B)=\prod_{j=1}^N\prod_{t=1}^T\Big\{\phi\left(y_{jt}-X_{jt}B+(\beta_i+\gamma_i)G(X_{jt})\right)[1-G(X_{jt})]$
+$\phi\left(y_{jt}-X_{jt}B-(\beta_i+\gamma_i)[1-G(X_{jt})]\right)G(X_{jt})\Big\}$
+\end{itemize} 
+\hyperlink{timing}{\beamergotobutton{Link to Timing}}
 \end{frame}
 
 \section{Implications for the Optimal Program}
@@ -724,6 +737,26 @@ pause
 \end{itemize}
 \end{enumerate}
 \hyperlink{question}{\beamergotobutton{Back to Research Question}}
+\end{frame}
+
+\begin{frame}[label=ybar0_sel]
+\frametitle{Reported Income  (0 children) - Selected Sample}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=2.7in]{Dom1_060114_non_0_bin3p5.pdf}
+\end{center}
+\end{figure}
+\hyperlink{ybar0}{\beamergotobutton{Back to Households with 0 Children}}
+\end{frame}
+
+\begin{frame}[label=ybar2_sel]
+\frametitle{Reported Income (2 children) - Selected Sample}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=2.7in]{Dom1_060114_non_2_bin3p5.pdf}
+\end{center}
+\end{figure}
+\hyperlink{ybar2_sel}{\beamergotobutton{Back to Complete Sample}}
 \end{frame}
 
 \begin{frame}[label=theory]
