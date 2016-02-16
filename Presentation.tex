@@ -45,15 +45,15 @@
 \begin{frame}
  \frametitle{Motivation}
 % EEHPT: Put content here (of course, you can make it more than one slide)
-%\pause
+\pause
 \begin{itemize}
 \item Cash transfer programs are common (Brazil, Chile, Mexico etc)
-%\pause
+\pause
 \item \textit{Bolsa Fam\'ilia} is the largest Conditional Cash Transfer program in the world
 \begin{itemize}
-%\pause
+\pause
 \item 30 million beneficiaries as of March 2015
-%\pause
+\pause
 \item Individuals below annual income of US\$ 528
 \end{itemize}
 \end{itemize}
@@ -64,18 +64,46 @@
 % EEHPT: Put content here (of course, you can make it more than one slide)
 \begin{itemize}
 \item What is the benefit schedule that minimizes the cost of the program given a minimum consumption level?
-%\pause
+\pause
 \begin{itemize}
 \item Labor supply responses
 \item Mis-reporting responses
 \end{itemize}
-%\pause
+\pause
 \item In this talk:
+
 \begin{itemize}
 \item What are the elasticities of reported and real income?
 \end{itemize}
 \end{itemize}
-\hyperlink{literature}{\beamergotobutton{Link to Literature}}
+\end{frame}
+
+\begin{frame}[label=literature]
+ \frametitle{Related Literature}
+% EEHPT: Put content here (of course, you can make it more than one slide) 
+\begin{enumerate}
+\item Optimal Income Maintenance Programs (Besley and Coate 1992 and 1995, Kleven and Kopczuk 2011)
+\begin{itemize}
+\item Allocation as a function of sufficient statistics
+\item Incorporate extensive margin responses
+\end{itemize}
+\pause
+\item Modern Optimal Tax (Saez 2001 and 2002,  Piketty et al 2011, Huang and Rios 2015, Scheuer and Werning 2016)
+\begin{itemize}
+\item Framework more relevant for developing countries 
+\item Optimal reform as a function of elasticities under the observed schedule.
+\end{itemize}
+\pause
+\item Taxable Income Elasticity Estimation (Feldstein 1995, Gruber and Saez 2002, Saez 2010, Kleven and Waseem 2013)
+\begin{itemize}
+\item Disentangle real responses from mis-reporting responses
+\end{itemize}
+\pause
+\item Taxation in Developing Countries (Gordon and Li 2009, Pomeranz 2013, Best et al 2014, Naritomi 2015, Bachas and Soto 2015)
+\begin{itemize}
+\item Focus here on cash-transfer programs (negative taxes).
+\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}
@@ -87,27 +115,27 @@
 
 \begin{frame}
 	\frametitle{The \textit{Bolsa Fam\'ilia} Program}
-	%\pause
+	\pause
 \begin{itemize}
 \item Benefits based on: 
 \begin{itemize}
-\item Household income per capita
+\item Household self-reported income per capita
 \item Household Composition
 \end{itemize}
-%\pause
+\pause
 \item Information is collected in program's offices
 \begin{itemize}
 \item Assets, demographics and income are self-reported to interviewers
 \item Interviewers may adjust the reported income
 \item Computer calculates the per capita income
 \end{itemize}
-%\pause
+\pause
 \item Timing
 \begin{itemize}
 \item Interviews on any business day
 \item Updates at least once every two years
 \end{itemize}
-%\pause
+\pause
 \item Audits
 \begin{itemize}
 \item Take away benefits
@@ -118,7 +146,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Households with 3 Members \only<-4>{and 1 Child} \only<5->{after Last Reform}}
+\frametitle{Households with 3 Members \only<-5>{and 1 Child} \only<6->{after Last Reform}}
 \begin{center}
 \scalebox{0.7}{
 \begin{tikzpicture}[x=1.4,y=1.4]
@@ -127,8 +155,8 @@
 \node[align=center, above] at (0,200) {$y+B(y)$ (R\$)};
 \draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
 
-%\pause
-\only<-4>{\draw[red!70!black, -, very thick] (0,30) -- (70,100) ; % 45 degree line
+\pause
+\only<-5>{\draw[red!70!black, -, very thick] (0,30) -- (70,100) ; % 45 degree line
 \draw[red!70!black, -, very thick] (70,100) -- (70,77.333) ; % notch
 \draw[red!70!black, -, very thick] (70,77.333) -- (140,147.33) ; % 45 degree line
 \draw[red!70!black, -, very thick] (140,147.33) -- (140,140) ; % notch
@@ -142,7 +170,7 @@
 \node[black, align=center, below] at (140,0) {\scriptsize{140}};}
 
 \pause
-\only<2-4>{\draw[green!70!black, -, very thick] (0,34) -- (70,104) ; % 45 degree line
+\only<2-5>{\draw[green!70!black, -, very thick] (0,34) -- (70,104) ; % 45 degree line
 \draw[green!70!black, -, very thick] (70,104) -- (70,80.666) ; % notch
 \draw[green!70!black, -, very thick] (70,80.666) -- (140,150.666) ; % 45 degree line
 \draw[green!70!black, -, very thick] (140,150.666) -- (140,140) ; % notch
@@ -152,7 +180,7 @@
 \node[black, align=right, left] at (0,34) {\scriptsize{34}};}
 
 \pause
-\only<3-4>{\draw[blue!70!black, -] (0,70) -- (36,70) ; % flat line
+\only<3-5>{\draw[blue!70!black, -] (0,70) -- (36,70) ; % flat line
 \draw[blue!70!black, -] (36,70) -- (70,104); % 45 degree line
 \draw[blue!70!black, -] (70,104) -- (70,80.666) ; % notch
 \draw[blue!70!black, -] (70,80.666) -- (140,150.666) ; % 45 degree line
@@ -165,7 +193,7 @@
 \node[black, align=right, left] at (0,70) {\scriptsize{70}};}
 
 \pause
-\only<4->{\draw[black, -] (0,77) -- (39.666,77) ; % flat line
+\only<5->{\draw[black, -] (0,77) -- (39.666,77) ; % flat line
 \draw[black, -] (39.666,77) -- (77,114.333); % 45 degree line
 \draw[black, -] (77,114.333) -- (77,88.666) ; % notch
 \draw[black, -] (77,88.666) -- (154,165.666) ; % 45 degree line
@@ -173,7 +201,7 @@
 \draw[black, -] (154,154) -- (180, 180); % 45 degree line
 
 \draw[black, -] (165,110) -- (180, 110);
-\node[black, align=center, right] at (180,110) {\only<4>{06.01.2014}\only<5->{With Children}};
+\node[black, align=center, right] at (180,110) {\only<5>{06.01.2014}\only<6->{With Children}};
 \node[black, align=right, left] at (0,77) {\scriptsize{77}};
 \draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
 \node[black, align=center, below] at (77,0) {\scriptsize{77}};
@@ -181,7 +209,7 @@
 \node[black, align=center, below] at (154,0) {\scriptsize{154}};}
 \pause
 \pause
-\only<5->{\draw[orange, -] (0,77) -- (51.333,77) ; % flat line
+\only<6->{\draw[orange, -] (0,77) -- (51.333,77) ; % flat line
 \draw[orange, -] (51.333,77) -- (77,102.666); % 45 degree line
 \draw[orange, -] (77,102.666) -- (77,77) ; % notch
 \draw[orange, -] (77,77) -- (180, 180); % 45 degree line
@@ -197,15 +225,15 @@
 \begin{frame}
 	\frametitle{Data}
 % EEHPT: Put content here (of course, you can make it more than one slide)
-%\pause
+\pause
 \begin{itemize}
-\item Bolsa Fam\'ilia Administrative Data for 2011-2015 (only 2015 today)
+\item Bolsa Fam\'ilia Administrative Data for 2012-2015 (only 2015 today)
 \begin{itemize}
 \item Panel with the self-reported income 
 \item Family Composition
 \item Date of the Income Update
 \end{itemize}
-%\pause
+\pause
 \item RAIS
 \begin{itemize}
 \item Universe of all formal employees in Brazil from 2002-2014
@@ -283,38 +311,18 @@
 \node[black, align=center, below] at (77,0) {\scriptsize{77}};
 \draw[black, -, dashed, thick] (154,0) -- (154,154) ;
 \node[black, align=center, below] at (154,0) {\scriptsize{154}};
-%\pause
+\pause
 \draw[-, thick] (0,37.333) -- (10,37.333) ;
 \draw (10,37.333) arc (0:45:10);
 \node[black, align=center, right] at (10,42.333) {\scriptsize{$1+B'(\bar{y})=1$}};
-%\pause
+\pause
 \node[black, align=center, right] at (170,100) {\scriptsize{$\bar{e}=\frac{\partial \bar{y}}{\partial B'}\frac{1+B'}{\bar{y}}$ is not recoverable}};
 \end{tikzpicture}
 \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Adjusted Bunching Method}
-%\pause
-\begin{align*}
-U(\bar{y},\tilde{y};e,\tilde{e},n)=\bar{y}+\tilde{y}+B(\bar{y})-\frac{n}{1+1/e}\left(\frac{\bar{y}+\tilde{y}}{n}\right)^{1+1/e}-\frac{\tilde{y}^{1+1/\tilde{e}}}{1+1/\tilde{e}}
-\end{align*}
-pause
-\begin{itemize}
-\item $\bar{y}$: Reported Income
-\item $\tilde{y}$: Hidden Income
-\item $y=\bar{y}+\tilde{y}$: Real Income
-\item $n$: Ability 
-%\pause
-\item $e=\frac{1+B'}{y}\frac{\partial y}{\partial B'}$: Elasticity of Real Income
-\item $\tilde{e}=\frac{1}{\tilde{y}}\frac{\partial \tilde{y}}{\partial B'}$: Hidden Income Response
-%\pause
-\item $\bar{e}=\frac{1+B'}{\bar{y}}\frac{\partial \bar{y}}{\partial B'}=\frac{1+B'}{\bar{y}}\left(	\frac{y}{1+B'}e-\tilde{y}\tilde{e}\right)$: Elasticity of Reported Income
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Usual Bunching}
+\frametitle{Reduced-Form Bunching}
 \begin{center}
 \begin{tikzpicture}[x=.9,y=.9]
 \node[align=center, right] at (200,0) {$\bar{y}$};
@@ -325,29 +333,74 @@ pause
 \draw[black, -] (0,37.333) -- (77,114.333); % 45 degree line
 \draw[black, -] (77,114.333) -- (77,88.666) ; % notch
 \draw[black, -] (77,88.666) -- (180,191.666) ; % 45 degree line
-\draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
-(0,88.666) -- (0,114.333)node [black,midway,xshift=-15pt] {\footnotesize $\Delta B$};
+\only<1>{\draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
+(0,88.666) -- (0,114.333)node [black,midway,xshift=-15pt] {\footnotesize $\Delta B$};}
 
 
 \draw[black, -, dashed, thick] (77,114.333) -- (150,187.333) ;
 
 \draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
-\node[black, align=center, below] at (77,0) {\scriptsize{$\bar{y}^*$}};
+\node[black, align=center, below] at (77,0) {\tiny{$\bar{y}^*$}};
 
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates { (36,89.666) (77,114.333) (96,149.666)};
+\pause
+\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates { (36,89.666) (77,114.333) (96,149.666)}; %Low type
 \node[align=center, above] at (96,149.666) {L};
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,111.333)  (120,131.666) (150,199)};
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,137)  (120,157.333) (140,224.666)};
+
+\pause
+\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,111.333)  (120,131.666) (150,199)}; %High type with the notch
 \node[align=center, above] at (150,199) {H};
+\draw[black, -, dashed, thick] (120,0) -- (120,131.666);
+\node[black, align=center, below] at (125,0) {\tiny{$\bar{y}_I$}};
 
+\pause 
+\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(47,131)  (110,147.333) (132,211.666)}; %High type without the notch
+\draw[black, -, dashed, thick] (110,0) -- (110,147.333) ;
+\node[black, align=center, below] at (107,0) {\tiny{$\bar{y}^*$+$\Delta \bar{y}^*$}};
 
-%\pause
+\pause 
+\only<5-7>{\draw[black, -, dashed, thick] (110,0) -- (110,147.333) ;
+\node[black, align=center, below] at (107,0) {\tiny{$\bar{y}^*$+$\Delta\bar{y}^*$}};
+\draw[black, -, dashed, thick] (77,114.333) -- (180,135.853);
+\node[black, align=center, right] at (140,98){\scriptsize{$e\cong -\frac{1}{\bar{y}^*}\frac{\Delta \bar{y}^*}{\Delta b_h}$}};
+\node[black, align=center, right] at (140,83){\scriptsize{Where $\Delta b_h=\frac{B(\bar{y}^*+\Delta \bar{y}^*)-B(\bar{y}^*)}{\Delta \bar{y}^*}$}};} %hypothetical kink
+
+\pause
+\only<6>{\draw[black, -, dashed, thick] (90,0) -- (90,115) ;
+\node[black, align=center, below] at (90,0) {\tiny{$\bar{y}_{h}$}};}
+
+\pause
+\only<7>{\draw[black, -, dashed, thick] (0,98.245) -- (77,114.333);
+\draw[decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
+(0,37.333) -- (0,98.245)node [black,midway,xshift=-15pt] {\footnotesize $\Delta \bar{y}^V$};}
+
+\pause
 \node[black, align=center, right] at (140,98){\scriptsize{1) Consumption is actually $\bar{y}+\tilde{y}+B(\bar{y})$}};
-%\pause
+
+\pause
 \node[black, align=center, right] at (140,79){\scriptsize{2) $ \uparrow \bar{y} \rightarrow \begin{cases}\uparrow y \text{ (bad)}\\ \downarrow \tilde{y} \text{ (good)}\end{cases}$}};
 
 \end{tikzpicture}
 \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Adjusted Bunching Method}
+\pause
+\begin{align*}
+U(\bar{y},\tilde{y};e,\tilde{e},n)=\bar{y}+\tilde{y}+B(\bar{y})-\frac{n}{1+1/e}\left(\frac{\bar{y}+\tilde{y}}{n}\right)^{1+1/e}-\frac{\tilde{y}^{1+1/\tilde{e}}}{1+1/\tilde{e}}
+\end{align*}
+\pause
+\begin{itemize}
+\item $\bar{y}$: Reported Income
+\item $\tilde{y}$: Hidden Income
+\item $y=\bar{y}+\tilde{y}$: Real Income
+\item $n$: Ability 
+\pause
+\item $e=\frac{1+B'}{y}\frac{\partial y}{\partial B'}$: Elasticity of Real Income
+\item $\tilde{e}=\frac{1}{\tilde{y}}\frac{\partial \tilde{y}}{\partial B'}$: Hidden Income Response
+\pause
+\item $\bar{e}=\frac{1+B'}{\bar{y}}\frac{\partial \bar{y}}{\partial B'}=\frac{1+B'}{\bar{y}}\left(	\frac{y}{1+B'}e-\tilde{y}\tilde{e}\right)$: Elasticity of Reported Income
+\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -368,7 +421,7 @@ pause
 \node[black, align=center, below] at (77,0) {\scriptsize{$\bar{y}^*$}};
 
 \node[black, align=center, right] at (0,182){\scriptsize{$\tilde{y}(\bar{y})\equiv arg\underset{\tilde{y}}{max}u(\bar{y},\tilde{y})$}};
-%\pause
+\pause
 
 \draw[blue, -] (0,77.333) -- (77,134.333); 
 \draw[blue, -, dashed] (77,134.333) -- (154,191.333) ; 
@@ -377,11 +430,11 @@ pause
 \draw[blue, -] (154.333,166) -- (180,191.666);
 \node[blue, align=center, right] at (180,186.666) {$\bar{y}+\tilde{y}(\bar{y})+B(\bar{y})$};
 
-%\pause
+\pause
 
 \draw [green!40!black, thick] plot [smooth, tension=.8] coordinates { (36,115.666) (78,135.333) (96,172.666)};
 \node[align=center, above] at (96,172.666) {L};
-%\pause
+\pause
 \draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,136.333)  (120,141.666) (150,209)};
 \draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,162)  (120,167.333) (139.5,214.666)};
 \node[align=center, above] at (150,209) {H};
@@ -389,13 +442,11 @@ pause
 \draw[black, -, dashed, thick] (120,0) -- (120,166.333) ;
 \node[black, align=center, below] at (120,0) {\scriptsize{$\bar{y}^*+\Delta \bar{y}^*$}};
 
-%\pause
-\node[black, align=center, right] at (140,120){\scriptsize{1) $u^H(\bar{y}^*;e,\tilde{e})=u^H(\bar{y}^*+\Delta \bar{y}^*;e,\tilde{e})$}};
-%\pause
-\node[black, align=center, right] at (140,108){\scriptsize{2) $f(\bar{y}^*, \Delta \bar{y}^*, \Delta B, e, \tilde{e})=0$}};
-%\pause
-\node[black, align=center, right] at (140,96){\scriptsize{3) Get $\Delta \bar{y}^*$ from bunching and missing mass}};
-\node[black, align=center, right] at (140,84){\scriptsize{$\Rightarrow$ Need another moment}};
+\pause
+\node[black, align=center, right] at (140,120){\scriptsize{ $u^H(\bar{y}^*;e,\tilde{e})=u^H(\bar{y}^*+\Delta \bar{y}^*;e,\tilde{e})$}};
+\pause
+\node[black, align=center, right] at (140,108){\scriptsize{$\Rightarrow$ If I could get $\bar{e}$, I could get $e$ and $\tilde{e}$}};
+
 
 \end{tikzpicture}
 \end{center}
@@ -420,7 +471,7 @@ pause
 \draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
 \node[black, align=center, below] at (77,0) {\scriptsize{$\bar{y}^*$}};
 
-%\pause
+\pause
 
 \draw[blue, -] (0,37.333) -- (100,137.333); 
 \draw[blue, -, dashed] (100,137.333) -- (160,197.333) ; 
@@ -429,24 +480,21 @@ pause
 \node[blue, align=center, right] at (180,186.666) {$y+B(y-\tilde{y} (y))$};
 \draw[black, -, dashed, thick] (100,0) -- (100,111.666) ;
 \node[black, align=center, below] at (100,0) {\scriptsize{$y^*$}};
-%\pause
+\pause
 
 \draw [green!40!black, thick] plot [smooth, tension=.8] coordinates { (70,120.666) (100,137.333) (114,167.666)};
 \node[align=center, above] at (114,167.666) {L};
-%\pause
+\pause
 \draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,130.333)  (140,153.666) (175,212)};
 \draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,156.666)  (140,180) (166,228.333)};
 \node[align=center, above] at (175,212) {H};
 
 \draw[black, -, dashed, thick] (146,0) -- (146,183) ;
 \node[black, align=center, below] at (146,0) {\scriptsize{$y^*+\Delta y^*$}};
-%\pause
-\node[black, align=center, right] at (148,120){\scriptsize{1) $u^H(y^*;e,\tilde{e})=u^H(y^*+\Delta y^*;e,\tilde{e})$}};
-%\pause
-\node[black, align=center, right] at (148,108){\scriptsize{2) $f(y^*, \Delta y^*, \Delta B, e, \tilde{e})=0$}};
-%\pause
-\node[black, align=center, right] at (148,96){\scriptsize{3) Get $\Delta y^*$ empirically}};
-\node[black, align=center, right] at (148,84){\scriptsize{$\Rightarrow$ Two moments and two parameters}};
+\pause
+\node[black, align=center, right] at (148,120){\scriptsize{$u^H(y^*;e,\tilde{e})=u^H(y^*+\Delta y^*;e,\tilde{e})$}};
+\pause
+\node[black, align=center, right] at (148,108){\scriptsize{\textcolor{red}{$y^*$ and $\Delta y^*$ depends on $\tilde{y}(y)$}}};
 \end{tikzpicture}
 \end{center}
 \end{frame}
@@ -493,24 +541,24 @@ pause
 \fill (196,196) circle (1.5);
 \fill (203,203) circle (1.5);
 
-%\pause
+\pause
 
 \draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
 (0,37.333) -- (0,44.333)node [black,midway,xshift=-15pt] {\footnotesize $c_1-c_0$};
 \draw[black, -, dashed] (0,44.333) -- (7,44.333) ;
 
-%\pause
+\pause
 \draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
 (0,95.666) -- (0,114.333)node [black,midway,xshift=-25pt] {\footnotesize $-(c_{12}-c_{11})$};
 \draw[black, -, dashed] (0,114.333) -- (77,114.333) ;
 \draw[black, -, dashed] (0,95.666) -- (84,95.666) ;
 
-%\pause
+\pause
 \draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt](0,161) -- (0,165.666)node [black,midway,xshift=-25pt] {\footnotesize $-(c_{23}-c_{22})$};
 \draw[black, -, dashed] (0,165.666) -- (154,165.666) ;
 \draw[black, -, dashed] (0,161) -- (161,161) ;
 
-%\pause
+\pause
 
 \node[black, align=center, right] at (150,100) {\scriptsize{$\bar{\mathcal{E}}_i=\frac{\partial \bar{h}_i}{\partial (c_i-c_{i-1})}\frac{(c_i-c_{i-1})}{\bar{h}_i}$ is recoverable}};
 \node[black, align=center, right] at (150,80) {\scriptsize{$\mathcal{\bar{E}}_i(w_i-w_{i-1})=\bar{e}_iw_i$}};
@@ -522,14 +570,10 @@ pause
 \begin{frame}[label=empirical]
 \frametitle{Empirical Strategy}
 \begin{itemize}
-\item $y_{jt}$: Income reported by household $j$ in period $t$.
+\item $\bar{y}_{jt}$: Income reported by household $j$ in period $t$.
 \pause
-\item $y^*_{jt}$: Latent income, so that $y_{jt}=\begin{cases}y^*_{jt}\ if\ y^*_{jt}>0\\
-0\ if\ y^*_{jt}\leq 0 \end{cases}$
-\pause
-\item $\Delta y_j = y_{jt_1}-y_{jt_0}$
-\pause
-\item $\delta \equiv med(\Delta y_j)$: Income bracket width
+\item $\bar{y}^*_{jt}$: Latent reported income, so that $\bar{y}_{jt}=\begin{cases}\bar{y}^*_{jt}\ if\ \bar{y}^*_{jt}>0\\
+0\ if\ \bar{y}^*_{jt}\leq 0 \end{cases}$
 \pause
 \begin{center}
 \scalebox{0.65}{
@@ -585,65 +629,48 @@ pause
 \end{tikzpicture} 
 }
 \end{center}
+\pause
 \item $d_{ij}=\begin{cases}1 & \text{if hh $j$ can report $0$, $i-1$ or $i$},\\
-0 & \text{otherwise.} \end{cases}$  ``intrinsic" occupation
+0 & \text{otherwise.} \end{cases}$  ``intrinsic" income level
 \pause
 \item $h_{ijt}=\begin{cases}1\ & \text{hh $j$ reports $i$ in $t$},\\
-0 & \text{otherwise.} \end{cases}$ ``equilibrium" occupation
+0 & \text{otherwise.} \end{cases}$ ``equilibrium" income level
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label = identification1]
+\begin{frame}[label = empirical_relation]
 \frametitle{Identifying $\eta_i=\frac{\partial h_i}{\partial(c_i-c_0)}\frac{c_i-c_0}{h_i}$ and $\mathcal{E}_i=\frac{\partial h_i}{\partial(c_i-c_{i-1})}\frac{c_i-c_{i-1}}{h_i}$}
 \begin{itemize}
-\item $y^*_{jt}=\sum_{i=1}^I d_{ij}(w_i*h_{i,j,t}+ w_{i-1}* h_{i-1,j,t})+u_{jt},$
+\item $\bar{y}^*_{jt}=\sum_{i=1}^I \beta_i d_{ij}ln(c_i-c_{i-1})_{jt}+\sum_{i=1}^I \gamma_i d_{ij}ln(c_i-c_{0})_{jt}+\lambda_j+v_{jt}$\\
 \pause
-\item $h_{ijt}=\begin{cases}1$ if $h_{ijt}^*>0\\
-0$ otherwise,$\end{cases}\ where\ h^*_{ijt}=f(\underbrace{(c_i-c_0),(c_i-c_{i-1})}_{X_{jt}})+\epsilon_{ijt},$
-\pause
-\item $E(h_{ijt}|X_{jt})=Prob(h_{ijt}^*=1|X_{jt})=Prob\Big(\epsilon_{ijt}>-f(X_{ijt})\Big)=1-G\Big(f(X_{ijt})\Big)$
-\pause
-\item $\Rightarrow h_{ijt}=1-G(f(X_{ijt}))+\nu_{ijt}$
-\pause
-\item $y^*_{jt}=\sum_{i=1}^I \beta_i d_{ij}ln(c_i-c_{i-1})_{jt}+\sum_{i=1}^I \gamma_i d_{ij}ln(c_i-c_{0})_{jt}+v_{jt}$\\
-\pause
-\item $d_{ij}$ defined empirically as a function of hh's composition, education, location and housing infrastructure.\hyperlink{intrinsic}{\beamergotobutton{Link to Intrinsic}}
-\pause
-\item $\frac{\beta_i}{w_i}=\eta_i\text{ and }\frac{\gamma_i}{\delta}=\eta_i$
+\item $\frac{\beta_i}{i\delta}=\mathcal{E}_i\text{ and }\frac{\gamma_i}{\delta}=\eta_i$
 \end{itemize}
-\end{frame}
-
-\begin{frame}[label=identification2]
-\begin{block}
-
-\textbf{Identification Assumption:} Labor supply and Mis-reporting decisions are not correlated with unobservables that changed with the program schedule.
-\end{block}
+\hyperlink{proof_empirical}{\beamergotobutton{Link to Proof}}
 \pause
-\frametitle{Identifying $\eta_i=\frac{\partial h_i}{\partial(c_i-c_0)}\frac{c_i-c_0}{h_i}$ and $\mathcal{E}_i=\frac{\partial h_i}{\partial(c_i-c_{i-1})}\frac{c_i-c_{i-1}}{h_i}$}
-\begin{itemize}
-\item $v_{jt}=u_{jt}+\sum_{i=1}^I(\beta_i+\gamma_i)\nu_{ijt}*d_{ij}$
 \begin{block}
 
-\textbf{Tobit Assumption:} $u_{jt}\sim N(0,1)$
+\textbf{Identification Assumptions:} 
+\begin{enumerate}
+\item Reporting decisions would change in the same way with the reform across households with different household compositions.
+\item Elasticities vary across income levels but not across household composition.
+\end{enumerate}
 \end{block}
-\item $L(B)=\prod_{j=1}^N\prod_{t=1}^T\Big\{\phi\left(y_{jt}-X_{jt}B+(\beta_i+\gamma_i)G(X_{jt})\right)[1-G(X_{jt})]$
-$\phi\left(y_{jt}-X_{jt}B-(\beta_i+\gamma_i)[1-G(X_{jt})]\right)G(X_{jt})\Big\}$
-\end{itemize} 
-\hyperlink{timing}{\beamergotobutton{Link to Timing}}
 \end{frame}
+
+
 
 \section{Implications for the Optimal Program}
 
 \begin{frame}[label=implications]
 \frametitle{Optimality of the Anti-Poverty Program}
 \begin{itemize}
-%\pause
+\pause
 \item If there are no fines $\Rightarrow$ elasticities of reported income are sufficient statistics
-%\pause
+\pause
 \item If there are fines $\Rightarrow$ elasticities of reported \underline{and real} income are sufficient statistics
-%\pause
+\pause
 \item These are elasticities \underline{under the optimal schedule}
-%\pause
+\pause
 \item The elasticities \underline{under the observed schedule} are sufficient statistics for the \underline{optimal reform}
 \end{itemize}
 \hyperlink{theory}{\beamergotobutton{Link to Discrete Model}}
@@ -665,25 +692,25 @@ $\phi\left(y_{jt}-X_{jt}B-(\beta_i+\gamma_i)[1-G(X_{jt})]\right)G(X_{jt})\Big\}$
 \draw (50,0) arc (-60:103:70);
 \node[black, align=center, below] at (20,145) {\scriptsize{$C^B$}};
 \node[black, align=center, below] at (150,145) {\scriptsize{$C^B<C^A$}};
-%\pause
+\pause
 \draw[black, -, dashed, thick] (70,0) -- (70,200) ;
 \node[black, align=center, below] at (70,0) {\scriptsize{$z$}};
-%\pause
+\pause
 \fill (70,63) circle (1.5);
 \node[black, align=center, left] at (70,63) {\scriptsize{$(B_0^*,B_1^*)$}};
-%\pause
+\pause
 \fill (112,17) circle (1.5);
 \node[black, align=center, right] at (112,17) {\scriptsize{$(B_0,B_1)$}};
-%\pause
+\pause
 \draw[->, very thick] (112,17) -- (90,30) ; %edit here for the x axis
 \node[black, align=center, above] at (94,30) {\scriptsize{$C^*=-\nabla C$}};
-%\pause
+\pause
 \fill (70,103) circle (1.5);
 \node[black, align=center, right] at (70,103) {\scriptsize{$(B'_0,B'_1)$}};
-%\pause
+\pause
 \draw[->, very thick] (70,103) -- (50,80) ; %edit here for the x axis
 \node[black, align=center, below] at (50,80) {\scriptsize{$-\nabla C$}};
-%\pause
+\pause
 \draw[->, very thick] (70,103) -- (70,80) ; %edit here for the x axis
 \node[black, align=center, below] at (75,80) {\scriptsize{$C*$}};
 
@@ -696,11 +723,11 @@ $\phi\left(y_{jt}-X_{jt}B-(\beta_i+\gamma_i)[1-G(X_{jt})]\right)G(X_{jt})\Big\}$
 \begin{frame}
 \frametitle{Recap}
 \begin{itemize}
-%\pause
-\item Recover elasticities of reported and real income from bunching in both distributions
-%\pause
+\pause
+\item Recover elasticities of reported and real income from bunching and reforms variation
+\pause
 \item Those elasticities are the sufficient statistics for the Optimal Anti-Poverty program
-%\pause
+\pause
 \item The optimal reform can be written as a function of elasticities under the observed schedule
 \end{itemize}
 \end{frame}
@@ -708,36 +735,6 @@ $\phi\left(y_{jt}-X_{jt}B-(\beta_i+\gamma_i)[1-G(X_{jt})]\right)G(X_{jt})\Big\}$
 \appendix
 \newcounter{finalframe}
 \setcounter{finalframe}{\value{framenumber}}
-
-\begin{frame}[label=literature]
- \frametitle{Related Literature}
-% EEHPT: Put content here (of course, you can make it more than one slide) 
-\begin{enumerate}
-\item Taxable Income Elasticity Estimation
-\begin{itemize}
-\item Disentangle real responses from mis-reporting responses
-\item Correction for the bunching estimation
-\end{itemize}
-%\pause
-\item Optimal Income Maintenance Programs (Kanbur and Stern 1987, Kanbur et al 1994, Besley and Coate 1992 and 1995, Kleven and Kopczuk 2011)
-\begin{itemize}
-\item Bring this discussion to the data 
-\item Incorporate extensive margin responses
-\end{itemize}
-%\pause
-\item Modern Optimal Tax (Saez 2001 and 2002, Rotschild and Scheuer 2013 and 2015,  and Lockwood 2015, Huang and Rios 2015)
-\begin{itemize}
-\item Framework more relevant for developing countries 
-\item Optimal reform as a function of elasticities under the observed schedule.
-\end{itemize}
-%\pause
-\item Taxation in Developing Countries (Gordon and Li 2009, Best et al 2014, Pomeranz 2013, Naritomi 2015, Bachas and Soto 2015, )
-\begin{itemize}
-\item Focus here on cash-transfer programs (negative taxes).
-\end{itemize}
-\end{enumerate}
-\hyperlink{question}{\beamergotobutton{Back to Research Question}}
-\end{frame}
 
 \begin{frame}[label=ybar0_sel]
 \frametitle{Reported Income  (0 children) - Selected Sample}
@@ -756,7 +753,23 @@ $\phi\left(y_{jt}-X_{jt}B-(\beta_i+\gamma_i)[1-G(X_{jt})]\right)G(X_{jt})\Big\}$
 \includegraphics[height=2.7in]{Dom1_060114_non_2_bin3p5.pdf}
 \end{center}
 \end{figure}
-\hyperlink{ybar2_sel}{\beamergotobutton{Back to Complete Sample}}
+\hyperlink{ybar2}{\beamergotobutton{Back to Complete Sample}}
+\end{frame}
+
+\begin{frame}[label=proof_empirical]
+\begin{itemize}
+\item $y^*_{jt}=\sum_{i=1}^I d_{ij}(w_i*h_{i,j,t}+ w_{i-1}* h_{i-1,j,t})+\lambda_1+u_{jt},$
+\item $h_{ijt}=\begin{cases}1$ if $h_{ijt}^*>0\\
+0$ otherwise,$\end{cases}\ where\ h^*_{ijt}=f(\underbrace{(c_i-c_0),(c_i-c_{i-1})}_{X_{jt}})+\epsilon_{ijt},$
+\item $E(h_{ijt}|X_{jt})=Prob(h_{ijt}^*=1|X_{jt})=Prob\Big(\epsilon_{ijt}>-f(X_{ijt})\Big)=1-G\Big(f(X_{ijt})\Big)$
+\item $\Rightarrow h_{ijt}=1-G(f(X_{ijt}))+\lambda_2+\nu_{ijt}$
+\item $y^*_{jt}=\sum_{i=1}^I \beta_i d_{ij}ln(c_i-c_{i-1})_{jt}+\sum_{i=1}^I \gamma_i d_{ij}ln(c_i-c_{0})_{jt}+\lambda+v_{jt}$\\
+\begin{align*}
+\beta=\frac{\partial E(y^*_{jt}|d_{ij}=1)}{\partial ln(c_i-c_{i-1})_{t}}= w_i\frac{\partial E(h_{i,j,t}|d_{ij}=1)}{\partial ln(c_i-c_{i-1})_{t}} \\
+\eta_i = \frac{1}{P(h_{ij}=1)}\beta
+\end{align*}
+\end{itemize}
+\hyperlink{empirical_relation}{\beamergotobutton{Back to Empirical}}
 \end{frame}
 
 \begin{frame}[label=theory]
@@ -764,26 +777,26 @@ $\phi\left(y_{jt}-X_{jt}B-(\beta_i+\gamma_i)[1-G(X_{jt})]\right)G(X_{jt})\Big\}$
  \begin{center}
 $U^E=w_{\bar{i}+\tilde{i}}+B_{\bar{i}}-p_{\bar{i}}f_{\tilde{i}}-\psi(\bar{i}+\tilde{i},\tilde{i},m)$ 
  \end{center}
-%\pause
+\pause
 \begin{itemize}
 \item $\bar{i}$: reported income level 
 \item $\tilde{i}$: hidden income level $\Rightarrow \bar{i}+\tilde{i}$ real income level
 \item $w_0=0<w_1<...<w_I$: wages in each income level 
-%\pause
+\pause
 \item $B_0,B_1,...,B_I$: Benefits for each reported level
-%\pause
+\pause
 \item $p_{\bar{i}}$: probability of being audited if reports $\bar{i}$
 \item $f_{\tilde{i}}$: fine of hiding $\tilde{i}$
-%\pause
+\pause
 \item $\psi(\cdot,\cdot,m)$: Labor supply and misreporting costs of types $m$.
 \end{itemize}
-%\pause
+\pause
  \begin{assum}
 \begin{enumerate}
 \item No income effect. 
 \item Expected utility 
 \item Some types cannot work
-%\pause
+\pause
 \item Type $m$ reports either level $0$, $i(m)-1$ or $i(m)$:
 \end{enumerate}
 \end{assum}
@@ -796,11 +809,11 @@ $U^E=w_{\bar{i}+\tilde{i}}+B_{\bar{i}}-p_{\bar{i}}f_{\tilde{i}}-\psi(\bar{i}+\ti
 \item $\bar{h}_i$: Proportion of households reporting level $i$ in equilibrium
 \item $\tilde{h}_i$: Proportion of households producing $i$ but reporting $i-1$.
 \item $\tilde{H}_i$: Proportion of households producing $i$ but reporting $0$.
-%\pause
+\pause
 \item $c_i=w_i+B_i$: Consumption observed by the government
-%\pause
+\pause
 \item $z$: Minimum Consumption Level.
-%\pause
+\pause
 \begin{align*}
 	\underset{\{B_i\}_{i=0}^I}{min} \sum_{i=0}^I \{\bar{h}_iB_i-p_{i-1}f_1\tilde{h}_i-p_0f_i\tilde{H}_i\} \nonumber\\
 	st\ c_0 \geq z\ and\ B_i\geq0\ \forall i. \nonumber
@@ -823,7 +836,7 @@ Reported income elasticity in the intensive margin:
 
 \begin{frame}
 $h_i$: Proportion of households producing $i$.
-%\pause
+\pause
 \begin{defin}
 	Real income elasticity in the extensive margin:
 	\begin{align*}
@@ -871,7 +884,7 @@ The cost minimizing local reform is a vector of perturbation in the benefit sche
 	\end{align*}
 	 $v$: lowest level with zero benefits
 \end{prop}	
-%\pause
+\pause
 \begin{block}
 
 \textbf{Here all the parameters are recoverable from the data.}
@@ -882,27 +895,27 @@ The cost minimizing local reform is a vector of perturbation in the benefit sche
 \begin{frame}[label=proof_main]
 \begin{proof}
 Since there are households that cannot work $\Rightarrow B_0^*=z$ \\
-%\pause
+\pause
 Consider the perturbation at the optimum $dB_i=dB_{i+1}=...=dB_I=dB$. \\
 \begin{enumerate}
-%\pause
+\pause
 \item $ME =  dB\sum_{j=i}^Ih_j$.\\
-%\pause
+\pause
 \item $BEIM = dh^{int}_i(B_i-B_{i-1})= (dk^{int}_i-de_i)(B_i-B_{i-1})$\\
-%\pause
+\pause
 \item $BEEM = \sum_{j=i}^Idh^{ext}_j(B_j-B_0) =\sum_{j=i}^I(dk^{ext}_j-dE_j)(B_j-B_0) $\\
-%\pause
+\pause
 \item $FE =-p_{i-1}f_1de_i-p_{0}\sum_{j=i}^If_jdE_j$\\
 \end{enumerate}
-%\pause
+\pause
 At the optimum: $ME + BEIM + BEEM +FE= 0$.
-%\pause
+\pause
 \begin{align*}
 BEIM+FEIM=dk^I_i(B_i-B_{i-1})+de_i[(B_{i-1}-B_{i})-p_{i-1}f_1]=\\
 dk^I_i(B_i-B_{i-1})+de_i\mu_{\bar{m}(i)}(B_{i-1}-B_{i})=\\
 \left[(1-\mu_{\bar{m}(i)})dk^I_i+\mu_{\bar{m}(i)} dh_i^I\right](B_i-B_{i-1})
 \end{align*} 
-%\pause
+\pause
 $\bar{\eta}^{*}_i\leq \frac{c^*_i-z}{z}$  for $i>v$ ensures  $B^*_{i-1}\geq B^*_i$ and hence $B^*_i=0$.
 \end{proof}
 \hyperlink{prop_imp}{\beamergotobutton{Back to Proposition}}
@@ -946,13 +959,13 @@ Multiplying the RHS by $\frac{B_{0}-B_i}{p_{0}f_i+\psi(i,i,\bar{n})-\psi(i,0,\ba
  \frametitle{Welfarist Objective}
 \begin{itemize}
 \item $\delta^m$: Welfare weight on households of type $m$
-%\pause
+\pause
 \item $\tilde{i}$: hidden income so that $i+\tilde{i}$ is the real income level
-%\pause
+\pause
 \item $v(m)$: Measure of households with type $m$. 
-%\pause
+\pause
 \item $R$: Anti-poverty program's budget
-%\pause
+\pause
 \item The government solves:
 \begin{align*}
 \underset{\{B_0,B_1,...,B_I\}}{max} \int_M \delta^m u^m(w_{i+\tilde{i}}+B_i,i+\tilde{i},\tilde{i})dv(m)\\
@@ -1009,9 +1022,9 @@ The reported income is the targeting instrument
 % EEHPT: Put content here (of course, you can make it more than one slide)
 \begin{itemize}
 \item The objective function is concerned with income and not welfare  
-%\pause
+\pause
 \item If the poorest cannot work, caring about his income is equivalent to caring about his utility
-%\pause
+\pause
 \item Equivalent to a Rawlsian Social Planner with a budget equal to the minimum cost
 \end{itemize}
 \end{frame}
