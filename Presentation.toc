@@ -1,5 +1,2 @@
 \beamer@endinputifotherversion {3.20pt}
-\beamer@sectionintoc {1}{Institutional Background}{18}{0}{1}
-\beamer@sectionintoc {2}{Data}{30}{0}{2}
-\beamer@sectionintoc {3}{Elasticities Estimation}{38}{0}{3}
-\beamer@sectionintoc {4}{Implications for the Optimal Program}{80}{0}{4}
+\beamer@sectionintoc {1}{Dados}{15}{0}{1}

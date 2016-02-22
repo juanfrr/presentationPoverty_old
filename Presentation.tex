@@ -36,183 +36,116 @@
 
 \begin{document}
 
-\title{Optimal Anti-Poverty Programs}
-\subtitle{An Application to the Brazilian \textit{Bolsa Fam\'ilia}}
+\title{Programas de Combate \`a Pobreza \'Otimos}
+\subtitle{Uma aplica\c{c}\~ao ao \textit{Bolsa Fam\'ilia}}
 \author{Juan Rios}
 
 \maketitle
 
 \begin{frame}
- \frametitle{Motivation}
+ \frametitle{Introdu\c{c}\~ao}
 % EEHPT: Put content here (of course, you can make it more than one slide)
 \pause
 \begin{itemize}
-\item Cash transfer programs are common (Brazil, Chile, Mexico etc)
+\item Impasse entre academia e pol\'itica publica:
+\begin{itemize}
+\item Academia: Maximizar o bem-estar social
+\item Policy makers: Reduzir a pobreza
+\end{itemize}
 \pause
-\item \textit{Bolsa Fam\'ilia} is the largest Conditional Cash Transfer program in the world
+\item \textit{Bolsa Fam\'ilia} \'e o maior programa de transfer\^encia condicional de renda do mundo
 \begin{itemize}
 \pause
-\item 30 million beneficiaries as of March 2015
+\item 30 milh\~oes de benefici\'arios em Mar\c{c}o de 2015
 \pause
-\item Individuals below annual income of US\$ 528
+\item Indiv\'iduos abaixo de renda anual de US\$ 528 (EITC abaixo de US\$ 16,000)
 \end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}[label=question]
- \frametitle{The Research Question}
+ \frametitle{O que sabemos na academia sobre redistribui\c{c}\~ao de renda?}
 % EEHPT: Put content here (of course, you can make it more than one slide)
 \begin{itemize}
-\item What is the benefit schedule that minimizes the cost of the program given a minimum consumption level?
-\pause
+\item O imposto de renda que maximiza a fun\c{c}\~ao de bem-estar
 \begin{itemize}
-\item Labor supply responses
-\item Mis-reporting responses
+\item BF \'e um Imposto de Renda Negativo
+\item Bem-estar: soma de fun\c{c}\~oes de utilidade
+\item Precisamos de algumas estat\'isticas dos dados de renda (Saez, 2001)
 \end{itemize}
 \pause
-\item In this talk:
-
+\item Problemas 
 \begin{itemize}
-\item What are the elasticities of reported and real income?
+\item N\~ao sabemos bem como som\'ar-las.
+\item No Brasil, Imposto de renda dissociado do BF
 \end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}[label=literature]
- \frametitle{Related Literature}
+ \frametitle{O que proponho}
 % EEHPT: Put content here (of course, you can make it more than one slide) 
-\begin{enumerate}
-\item Optimal Income Maintenance Programs (Besley and Coate 1992 and 1995, Kleven and Kopczuk 2011)
 \begin{itemize}
-\item Allocation as a function of sufficient statistics
-\item Incorporate extensive margin responses
+\item Maximizar a renda m\'inima brasileira dado o or\c{c}amento do programa
+\begin{itemize}
+\item Mais pr\'oximo do objetivo real do governo
+\item O que voc\^es acham?
 \end{itemize}
 \pause
-\item Modern Optimal Tax (Saez 2001 and 2002,  Piketty et al 2011, Huang and Rios 2015, Scheuer and Werning 2016)
+\item Estimar as estat\'isticas necess\'arias usando os dados do BF e da RAIS
 \begin{itemize}
-\item Framework more relevant for developing countries 
-\item Optimal reform as a function of elasticities under the observed schedule.
+\item Incentivos gerados pelo programa
+\item Capacidade de fiscaliza\c{c}\~ao 
 \end{itemize}
-\pause
-\item Taxable Income Elasticity Estimation (Feldstein 1995, Gruber and Saez 2002, Saez 2010, Kleven and Waseem 2013)
-\begin{itemize}
-\item Disentangle real responses from mis-reporting responses
 \end{itemize}
-\pause
-\item Taxation in Developing Countries (Gordon and Li 2009, Pomeranz 2013, Best et al 2014, Naritomi 2015, Bachas and Soto 2015)
-\begin{itemize}
-\item Focus here on cash-transfer programs (negative taxes).
-\end{itemize}
-\end{enumerate}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Outline}
-    \tableofcontents[pausesections]
-\end{frame}
-
-\section{Institutional Background}
-
-\begin{frame}
-	\frametitle{The \textit{Bolsa Fam\'ilia} Program}
-	\pause
-\begin{itemize}
-\item Benefits based on: 
-\begin{itemize}
-\item Household self-reported income per capita
-\item Household Composition
-\end{itemize}
-\pause
-\item Information is collected in program's offices
-\begin{itemize}
-\item Assets, demographics and income are self-reported to interviewers
-\item Interviewers may adjust the reported income
-\item Computer calculates the per capita income
-\end{itemize}
-\pause
-\item Timing
-\begin{itemize}
-\item Interviews on any business day
-\item Updates at least once every two years
-\end{itemize}
-\pause
-\item Audits
-\begin{itemize}
-\item Take away benefits
-\item Vary with the gov. budget
-\item Geographical variation
-\end{itemize}
-\end{itemize}	
-\end{frame}
-
-\begin{frame}
-\frametitle{Households with 3 Members \only<-5>{and 1 Child} \only<6->{after Last Reform}}
+\frametitle{Domic\'ilios com 3 membros \only<-3>{e 1 Crian\c{c}a} \only<4->{ap\'os a \'ultima reforma}}
 \begin{center}
 \scalebox{0.7}{
-\begin{tikzpicture}[x=1.4,y=1.4]
-\node[align=center, right] at (200,0) {$y$ (R\$)};
+\begin{tikzpicture}[x=1.4,y=2.4]
+\node[align=center, right] at (200,0) {Renda};
 \draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center, above] at (0,200) {$y+B(y)$ (R\$)};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
+\node[align=center, above] at (0,100) {Benef\'icio};
+\draw[->, very thick] (0,0) -- (0,100) ; %edit here for the y axis
 
 \pause
-\only<-5>{\draw[red!70!black, -, very thick] (0,30) -- (70,100) ; % 45 degree line
-\draw[red!70!black, -, very thick] (70,100) -- (70,77.333) ; % notch
-\draw[red!70!black, -, very thick] (70,77.333) -- (140,147.33) ; % 45 degree line
-\draw[red!70!black, -, very thick] (140,147.33) -- (140,140) ; % notch
-\draw[red!70!black, -, very thick] (140,140) -- (180, 180); % 45 degree line
-\draw[red!70!black, -, very thick] (165,80) -- (180, 80);
-\node[black, align=center, right] at (180,80) {07.30.2009};
-\node[black, align=right, left] at (0,30) {\scriptsize{30}};
-\draw[black, -, dashed, thick] (70,0) -- (70,77.333) ;
-\node[black, align=center, below] at (70,0) {\scriptsize{70}};
-\draw[black, -, dashed, thick] (140,0) -- (140,140) ;
-\node[black, align=center, below] at (140,0) {\scriptsize{140}};}
-
-\pause
-\only<2-5>{\draw[green!70!black, -, very thick] (0,34) -- (70,104) ; % 45 degree line
-\draw[green!70!black, -, very thick] (70,104) -- (70,80.666) ; % notch
-\draw[green!70!black, -, very thick] (70,80.666) -- (140,150.666) ; % 45 degree line
-\draw[green!70!black, -, very thick] (140,150.666) -- (140,140) ; % notch
-\draw[green!70!black, -, very thick] (140,140) -- (180, 180); % 45 degree line
-\draw[green!70!black, -, very thick] (165,90) -- (180, 90);
-\node[black, align=center, right] at (180,90) {04.11.2011};
-\node[black, align=right, left] at (0,34) {\scriptsize{34}};}
-
-\pause
-\only<3-5>{\draw[blue!70!black, -] (0,70) -- (36,70) ; % flat line
-\draw[blue!70!black, -] (36,70) -- (70,104); % 45 degree line
-\draw[blue!70!black, -] (70,104) -- (70,80.666) ; % notch
-\draw[blue!70!black, -] (70,80.666) -- (140,150.666) ; % 45 degree line
-\draw[blue!70!black, -] (140,150.666) -- (140,140) ; % notch
-\draw[blue!70!black, -] (140,140) -- (180, 180); % 45 degree line
+\only<1-3>{\draw[blue!70!black, -] (0,70) -- (36,34) ; % flat line
+\draw[blue!70!black, -] (36,34) -- (70,34); % 45 degree line
+\draw[blue!70!black, -] (70,34) -- (70,10.666) ; % notch
+\draw[blue!70!black, -] (70,10.666) -- (140,10.666) ; % 45 degree line
+\draw[blue!70!black, -] (140,10.666) -- (140,0) ; % notch
+\draw[blue!70!black, -] (140,0) -- (180, 0); % 45 degree line
 
 \draw[blue!70!black, -] (165,100) -- (180, 100);
 \node[black, align=center, right] at (180,100) {06.18.2012};
 %Note that this date should be adjusted to 11.18.2012 if child is older than 6 (but younger than 15)
-\node[black, align=right, left] at (0,70) {\scriptsize{70}};}
+\node[black, align=right, left] at (0,70) {\scriptsize{70}};
+\draw[black, -, dashed, thick] (70,0) -- (70,10.666) ;
+\node[black, align=center, below] at (70,0) {\scriptsize{70}};
+\node[black, align=center, below] at (140,0) {\scriptsize{140}};}
+
 
 \pause
-\only<5->{\draw[black, -] (0,77) -- (39.666,77) ; % flat line
-\draw[black, -] (39.666,77) -- (77,114.333); % 45 degree line
-\draw[black, -] (77,114.333) -- (77,88.666) ; % notch
-\draw[black, -] (77,88.666) -- (154,165.666) ; % 45 degree line
-\draw[black, -] (154,165.666) -- (154,154) ; % notch
-\draw[black, -] (154,154) -- (180, 180); % 45 degree line
+\only<3->{\draw[black, -] (0,77) -- (39.666,37.333) ; % flat line
+\draw[black, -] (39.666,37.333) -- (77,37.333); % 45 degree line
+\draw[black, -] (77,37.333) -- (77,11.666) ; % notch
+\draw[black, -] (77,11.666) -- (154,11.666) ; % 45 degree line
+\draw[black, -] (154,11.666) -- (154,0) ; % notch
+\draw[black, -] (154,0) -- (180, 0); % 45 degree line
 
 \draw[black, -] (165,110) -- (180, 110);
-\node[black, align=center, right] at (180,110) {\only<5>{06.01.2014}\only<6->{With Children}};
+\node[black, align=center, right] at (180,110) {\only<3>{06.01.2014}\only<4->{With Children}};
 \node[black, align=right, left] at (0,77) {\scriptsize{77}};
-\draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
+\draw[black, -, dashed, thick] (77,0) -- (77,11.666) ;
 \node[black, align=center, below] at (77,0) {\scriptsize{77}};
-\draw[black, -, dashed, thick] (154,0) -- (154,154) ;
 \node[black, align=center, below] at (154,0) {\scriptsize{154}};}
 \pause
-\pause
-\only<6->{\draw[orange, -] (0,77) -- (51.333,77) ; % flat line
-\draw[orange, -] (51.333,77) -- (77,102.666); % 45 degree line
-\draw[orange, -] (77,102.666) -- (77,77) ; % notch
-\draw[orange, -] (77,77) -- (180, 180); % 45 degree line
+\only<4->{\draw[orange, -] (0,77) -- (51.333,25.666) ; % flat line
+\draw[orange, -] (51.333,25.666) -- (77,25.666); % 45 degree line
+\draw[orange, -] (77,25.666) -- (77,0) ; % notch
+\draw[orange, -] (77,0) -- (180, 0); % 45 degree line
 
 \draw[orange, -] (165,100) -- (180, 100);
 \node[black, align=center, right] at (180,100) {Without Children};}
@@ -221,24 +154,24 @@
 \end{center}
 \end{frame}
 
-\section{Data}
+\section{Dados}
 \begin{frame}
-	\frametitle{Data}
+	\frametitle{Dados}
 % EEHPT: Put content here (of course, you can make it more than one slide)
 \pause
 \begin{itemize}
-\item Bolsa Fam\'ilia Administrative Data for 2012-2015 (only 2015 today)
+\item Cadunico para 2012-2015 (apenas 2015 hoje)
 \begin{itemize}
-\item Panel with the self-reported income 
-\item Family Composition
-\item Date of the Income Update
+\item Renda e renda per capita domiciliar
+\item Composi\c{c}\~ao Familiar
+\item Data da atualiza\c{c}\~ao
 \end{itemize}
 \pause
 \item RAIS
 \begin{itemize}
-\item Universe of all formal employees in Brazil from 2002-2014
-\item Monthly income 
-\item Individual level identifier
+\item Renda reportada por firmas
+\item M\^es de refer\^encia
+\item CPF
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -246,14 +179,14 @@
 \begin{frame}
 \begin{table}[htbp]
   \centering
-  \caption{Selection}
+  \caption{Quem est\'a no Mercado Formal?}
     \input{tab_selection.tex}
   \label{tab_selection}%
 \end{table}%
 \end{frame}
 
 \begin{frame}[label=ybar0]
-\frametitle{Reported Income Distribution (0 children)}
+\frametitle{Distribui\c{c}\~ao da Renda reportada (sem filhos)}
 \begin{figure}[H]
 \begin{center}
 \includegraphics[height=2.7in]{Dom_060114_non_0_bin3p5.pdf}
@@ -263,7 +196,7 @@
 \end{frame}
 
 \begin{frame}[label=ybar2]
-\frametitle{Reported Income Distribution (2 children)}
+\frametitle{Distribui\c{c}\~ao da Renda reportada (2 crian\c{c}as)}
 \begin{figure}[H]
 \begin{center}
 \includegraphics[height=2.7in]{Dom_060114_non_2_bin3p5.pdf}
@@ -273,7 +206,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{3rd Party Reported Income Distribution (0 children)}
+\frametitle{Distribui\c{c}\~ao da Renda formal (sem filhos)}
 \begin{figure}[H]
 \begin{center}
 \includegraphics[height=2.7in]{Rais_060114_non_0_bin3p5.pdf}
@@ -282,7 +215,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{3rd Party Reported Income Distribution (2 children)}
+\frametitle{Distribui\c{c}\~ao da Renda formal (2 crian\c{c}as)}
 \begin{figure}[H]
 \begin{center}
 \includegraphics[height=2.7in]{Rais_060114_non_2_bin3p5.pdf}
@@ -290,446 +223,109 @@
 \end{figure}
 \end{frame}
 
-\section{Elasticities Estimation}
-
-\begin{frame}[label=schedule]
-\frametitle{Program Schedule}
-\begin{center}
-\begin{tikzpicture}[x=.9,y=.9]
-\node[align=center, right] at (200,0) {$\bar{y}$};
-\draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center, above] at (0,200) {$\bar{y}+B(\bar{y})$};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
-
-\draw[black, -, thick] (0,37.333) -- (77,114.333); % 45 degree line
-\draw[black, -, thick] (77,114.333) -- (77,88.666) ; % notch
-\draw[black, -, thick] (77,88.666) -- (154,165.666) ; % 45 degree line
-\draw[black, -, thick] (154,165.666) -- (154,154) ; % notch
-\draw[black, -, thick] (154,154) -- (180, 180); % 45 degree line
-
-\draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
-\node[black, align=center, below] at (77,0) {\scriptsize{77}};
-\draw[black, -, dashed, thick] (154,0) -- (154,154) ;
-\node[black, align=center, below] at (154,0) {\scriptsize{154}};
-\pause
-\draw[-, thick] (0,37.333) -- (10,37.333) ;
-\draw (10,37.333) arc (0:45:10);
-\node[black, align=center, right] at (10,42.333) {\scriptsize{$1+B'(\bar{y})=1$}};
-\pause
-\node[black, align=center, right] at (170,100) {\scriptsize{$\bar{e}=\frac{\partial \bar{y}}{\partial B'}\frac{1+B'}{\bar{y}}$ is not recoverable}};
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
 \begin{frame}
-\frametitle{Reduced-Form Bunching}
-\begin{center}
-\begin{tikzpicture}[x=.9,y=.9]
-\node[align=center, right] at (200,0) {$\bar{y}$};
-\draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center, above] at (0,200) {$\bar{y}+B(\bar{y})$};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
-
-\draw[black, -] (0,37.333) -- (77,114.333); % 45 degree line
-\draw[black, -] (77,114.333) -- (77,88.666) ; % notch
-\draw[black, -] (77,88.666) -- (180,191.666) ; % 45 degree line
-\only<1>{\draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
-(0,88.666) -- (0,114.333)node [black,midway,xshift=-15pt] {\footnotesize $\Delta B$};}
-
-
-\draw[black, -, dashed, thick] (77,114.333) -- (150,187.333) ;
-
-\draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
-\node[black, align=center, below] at (77,0) {\tiny{$\bar{y}^*$}};
-
-\pause
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates { (36,89.666) (77,114.333) (96,149.666)}; %Low type
-\node[align=center, above] at (96,149.666) {L};
-
-\pause
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,111.333)  (120,131.666) (150,199)}; %High type with the notch
-\node[align=center, above] at (150,199) {H};
-\draw[black, -, dashed, thick] (120,0) -- (120,131.666);
-\node[black, align=center, below] at (125,0) {\tiny{$\bar{y}_I$}};
-
-\pause 
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(47,131)  (110,147.333) (132,211.666)}; %High type without the notch
-\draw[black, -, dashed, thick] (110,0) -- (110,147.333) ;
-\node[black, align=center, below] at (107,0) {\tiny{$\bar{y}^*$+$\Delta \bar{y}^*$}};
-
-\pause 
-\only<5-7>{\draw[black, -, dashed, thick] (110,0) -- (110,147.333) ;
-\node[black, align=center, below] at (107,0) {\tiny{$\bar{y}^*$+$\Delta\bar{y}^*$}};
-\draw[black, -, dashed, thick] (77,114.333) -- (180,135.853);
-\node[black, align=center, right] at (140,98){\scriptsize{$e\cong -\frac{1}{\bar{y}^*}\frac{\Delta \bar{y}^*}{\Delta b_h}$}};
-\node[black, align=center, right] at (140,83){\scriptsize{Where $\Delta b_h=\frac{B(\bar{y}^*+\Delta \bar{y}^*)-B(\bar{y}^*)}{\Delta \bar{y}^*}$}};} %hypothetical kink
-
-\pause
-\only<6>{\draw[black, -, dashed, thick] (90,0) -- (90,115) ;
-\node[black, align=center, below] at (90,0) {\tiny{$\bar{y}_{h}$}};}
-
-\pause
-\only<7>{\draw[black, -, dashed, thick] (0,98.245) -- (77,114.333);
-\draw[decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
-(0,37.333) -- (0,98.245)node [black,midway,xshift=-15pt] {\footnotesize $\Delta \bar{y}^V$};}
-
-\pause
-\node[black, align=center, right] at (140,98){\scriptsize{1) Consumption is actually $\bar{y}+\tilde{y}+B(\bar{y})$}};
-
-\pause
-\node[black, align=center, right] at (140,79){\scriptsize{2) $ \uparrow \bar{y} \rightarrow \begin{cases}\uparrow y \text{ (bad)}\\ \downarrow \tilde{y} \text{ (good)}\end{cases}$}};
-
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Adjusted Bunching Method}
-\pause
-\begin{align*}
-U(\bar{y},\tilde{y};e,\tilde{e},n)=\bar{y}+\tilde{y}+B(\bar{y})-\frac{n}{1+1/e}\left(\frac{\bar{y}+\tilde{y}}{n}\right)^{1+1/e}-\frac{\tilde{y}^{1+1/\tilde{e}}}{1+1/\tilde{e}}
-\end{align*}
-\pause
+\frametitle{O que preciso nos dados}
 \begin{itemize}
-\item $\bar{y}$: Reported Income
-\item $\tilde{y}$: Hidden Income
-\item $y=\bar{y}+\tilde{y}$: Real Income
-\item $n$: Ability 
+\item Em qual tabela do BF cada domic\'ilio se encaixa?
+\begin{itemize}
+\item N\'umero de Membros 
+\item Elig\'ivel para quais benef\'icios
+\end{itemize}
 \pause
-\item $e=\frac{1+B'}{y}\frac{\partial y}{\partial B'}$: Elasticity of Real Income
-\item $\tilde{e}=\frac{1}{\tilde{y}}\frac{\partial \tilde{y}}{\partial B'}$: Hidden Income Response
-\pause
-\item $\bar{e}=\frac{1+B'}{\bar{y}}\frac{\partial \bar{y}}{\partial B'}=\frac{1+B'}{\bar{y}}\left(	\frac{y}{1+B'}e-\tilde{y}\tilde{e}\right)$: Elasticity of Reported Income
+\item A frequ\^encia da renda reportada e formal per capita
+\begin{itemize}
+\item RAIS (j\'a tenho)
+\item BPC 
+\item Seguro Desemprego
+\item INSS
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Problemas}
+\begin{itemize}
+\item Renda per capita do domic\'ilio difere da tabela pessoa em 2\% das fam\'ilias (Cadunico)
+\item Alguns indiv\'iduos recebem benef\'icios que n\~ao deveriam (Benef\'icios)
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Adjusted Bunching Method (Reported Income)}
-\begin{center}
-\begin{tikzpicture}[x=.9,y=.9]
-\node[align=center, right] at (200,0) {$\bar{y}$};
-\draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center, above] at (0,200) {$\bar{y}+\tilde{y}(\bar{y})+B(\bar{y})$};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
-
-\draw[gray, -] (0,37.333) -- (77,114.333); % 45 degree line
-\draw[gray, -] (77,114.333) -- (77,88.666) ; % notch
-\draw[gray, -] (77,88.666) -- (180,191.666) ; % 45 degree line
-\node[gray, align=center, right] at (180,196.666) {$\bar{y}+B(\bar{y})$};
-
-\draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
-\node[black, align=center, below] at (77,0) {\scriptsize{$\bar{y}^*$}};
-
-\node[black, align=center, right] at (0,182){\scriptsize{$\tilde{y}(\bar{y})\equiv arg\underset{\tilde{y}}{max}u(\bar{y},\tilde{y})$}};
-\pause
-
-\draw[blue, -] (0,77.333) -- (77,134.333); 
-\draw[blue, -, dashed] (77,134.333) -- (154,191.333) ; 
-\draw[blue, -] (77,134.333) -- (77,108.666) ; % notch
-\draw[blue, -] (77,108.666) -- (154.333,166) ; 
-\draw[blue, -] (154.333,166) -- (180,191.666);
-\node[blue, align=center, right] at (180,186.666) {$\bar{y}+\tilde{y}(\bar{y})+B(\bar{y})$};
-
-\pause
-
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates { (36,115.666) (78,135.333) (96,172.666)};
-\node[align=center, above] at (96,172.666) {L};
-\pause
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,136.333)  (120,141.666) (150,209)};
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,162)  (120,167.333) (139.5,214.666)};
-\node[align=center, above] at (150,209) {H};
-
-\draw[black, -, dashed, thick] (120,0) -- (120,166.333) ;
-\node[black, align=center, below] at (120,0) {\scriptsize{$\bar{y}^*+\Delta \bar{y}^*$}};
-
-\pause
-\node[black, align=center, right] at (140,120){\scriptsize{ $u^H(\bar{y}^*;e,\tilde{e})=u^H(\bar{y}^*+\Delta \bar{y}^*;e,\tilde{e})$}};
-\pause
-\node[black, align=center, right] at (140,108){\scriptsize{$\Rightarrow$ If I could get $\bar{e}$, I could get $e$ and $\tilde{e}$}};
-
-
-\end{tikzpicture}
-\end{center}
+\frametitle{Benef\'icio B\'asico para Dom. com Mais de 77 renda pc (25\%!)}
+\begin{table}[htbp]
+  \centering
+  \caption{Benef\'icio B\'asico}
+    \begin{tabular}{rrrrr}
+    \toprule
+    idHh  & idInd & dta\_atual\_memb & rf\_folha & ben. Basico \\
+    \midrule
+    137   & 16033997884 & 2014-08-06 & 3/1/15 & 77 \\
+    \bottomrule
+    \end{tabular}
+\end{table}%
 \end{frame}
 
 \begin{frame}
-\frametitle{Adjusted Bunching Method (Real Income)}
-\begin{center}
-\begin{tikzpicture}[x=.9,y=.9]
-\node[align=center, right] at (200,0) {$y$};
-\draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center, above] at (0,200) {$y+B(y-\tilde{y}(y))$};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
-
-\node[black, align=center, right] at (0,182){\scriptsize{$\tilde{y}(y)\equiv arg\underset{\tilde{y}}{max}u(y,\tilde{y})$}};
-
-\draw[gray, -] (0,37.333) -- (77,114.333); % 45 degree line
-\draw[gray, -] (77,114.333) -- (77,88.666) ; % notch
-\draw[gray, -] (77,88.666) -- (180,191.666) ; % 45 degree line
-\node[gray, align=center, right] at (180,196.666) {$\bar{y}+B(\bar{y})$};
-
-\draw[black, -, dashed, thick] (77,0) -- (77,88.666) ;
-\node[black, align=center, below] at (77,0) {\scriptsize{$\bar{y}^*$}};
-
-\pause
-
-\draw[blue, -] (0,37.333) -- (100,137.333); 
-\draw[blue, -, dashed] (100,137.333) -- (160,197.333) ; 
-\draw[blue, -] (100,137.333) -- (100,111.666) ; % notch
-\draw[blue, -] (100,111.666) -- (180,191.666);
-\node[blue, align=center, right] at (180,186.666) {$y+B(y-\tilde{y} (y))$};
-\draw[black, -, dashed, thick] (100,0) -- (100,111.666) ;
-\node[black, align=center, below] at (100,0) {\scriptsize{$y^*$}};
-\pause
-
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates { (70,120.666) (100,137.333) (114,167.666)};
-\node[align=center, above] at (114,167.666) {L};
-\pause
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,130.333)  (140,153.666) (175,212)};
-\draw [green!40!black, thick] plot [smooth, tension=.8] coordinates {(57,156.666)  (140,180) (166,228.333)};
-\node[align=center, above] at (175,212) {H};
-
-\draw[black, -, dashed, thick] (146,0) -- (146,183) ;
-\node[black, align=center, below] at (146,0) {\scriptsize{$y^*+\Delta y^*$}};
-\pause
-\node[black, align=center, right] at (148,120){\scriptsize{$u^H(y^*;e,\tilde{e})=u^H(y^*+\Delta y^*;e,\tilde{e})$}};
-\pause
-\node[black, align=center, right] at (148,108){\scriptsize{\textcolor{red}{$y^*$ and $\Delta y^*$ depends on $\tilde{y}(y)$}}};
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-\begin{frame}[label=discretized]
-\frametitle{Discretized Program Schedule}
-\begin{center}
-\begin{tikzpicture}[x=.9,y=.9]
-\node[align=center, right] at (200,0) {$w_i$};
-\draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center, above] at (0,200) {$c_i=w_i+B_i$};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
-
-\fill (0,37.333) circle (1.5);
-\fill (7,44.333) circle (1.5);
-\fill (14,51.333) circle (1.5);
-\fill (21,58.333) circle (1.5);
-\fill (28,65.333) circle (1.5);
-\fill (35,72.333) circle (1.5);
-\fill (42,79.333) circle (1.5);
-\fill (49,86.333) circle (1.5);
-\fill (56,93.333) circle (1.5);
-\fill (63,100.333) circle (1.5);
-\fill (70,107.333) circle (1.5);
-\fill (77,114.333) circle (1.5);
-
-\fill (84,95.666) circle (1.5);
-\fill (91,102.666) circle (1.5);
-\fill (98,109.666) circle (1.5);
-\fill (105,116.666) circle (1.5);
-\fill (112,123.666) circle (1.5);
-\fill (119,130.666) circle (1.5);
-\fill (126,137.666) circle (1.5);
-\fill (133,144.666) circle (1.5);
-\fill (140,151.666) circle (1.5);
-\fill (147,158.666) circle (1.5);
-\fill (154,165.666) circle (1.5);
-
-\fill (161,161) circle (1.5);
-\fill (168,168) circle (1.5);
-\fill (175,175) circle (1.5);
-\fill (182,182) circle (1.5);
-\fill (189,189) circle (1.5);
-\fill (196,196) circle (1.5);
-\fill (203,203) circle (1.5);
-
-\pause
-
-\draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
-(0,37.333) -- (0,44.333)node [black,midway,xshift=-15pt] {\footnotesize $c_1-c_0$};
-\draw[black, -, dashed] (0,44.333) -- (7,44.333) ;
-
-\pause
-\draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt]
-(0,95.666) -- (0,114.333)node [black,midway,xshift=-25pt] {\footnotesize $-(c_{12}-c_{11})$};
-\draw[black, -, dashed] (0,114.333) -- (77,114.333) ;
-\draw[black, -, dashed] (0,95.666) -- (84,95.666) ;
-
-\pause
-\draw [decorate,decoration={brace,amplitude=1pt},xshift=-2pt,yshift=0pt](0,161) -- (0,165.666)node [black,midway,xshift=-25pt] {\footnotesize $-(c_{23}-c_{22})$};
-\draw[black, -, dashed] (0,165.666) -- (154,165.666) ;
-\draw[black, -, dashed] (0,161) -- (161,161) ;
-
-\pause
-
-\node[black, align=center, right] at (150,100) {\scriptsize{$\bar{\mathcal{E}}_i=\frac{\partial \bar{h}_i}{\partial (c_i-c_{i-1})}\frac{(c_i-c_{i-1})}{\bar{h}_i}$ is recoverable}};
-\node[black, align=center, right] at (150,80) {\scriptsize{$\mathcal{\bar{E}}_i(w_i-w_{i-1})=\bar{e}_iw_i$}};
-\end{tikzpicture}
-\end{center}
-\hyperlink{proof_relation}{\beamergotobutton{Link to Proof}}
-\end{frame}
-
-\begin{frame}[label=empirical]
-\frametitle{Empirical Strategy}
-\begin{itemize}
-\item $\bar{y}_{jt}$: Income reported by household $j$ in period $t$.
-\pause
-\item $\bar{y}^*_{jt}$: Latent reported income, so that $\bar{y}_{jt}=\begin{cases}\bar{y}^*_{jt}\ if\ \bar{y}^*_{jt}>0\\
-0\ if\ \bar{y}^*_{jt}\leq 0 \end{cases}$
-\pause
-\begin{center}
-\scalebox{0.65}{
-\begin{tikzpicture}[x=1.5cm]
-\draw[black,-,thick,>=latex]
-(0,0) -- (10.5,0) node[below right] {$\scriptstyle$};
-
-\draw[black,thick] 
-( 0,0) -- ++(0,5pt) node[above] {$\scriptstyle 0$};
-\draw[black,thick] 
-( 1,0) -- ++(0,5pt) node[above] {$\scriptstyle \delta$};
-
-\foreach \Xc in {2,3}
-{
-  \draw[black,thick] 
-    ( \Xc,0) -- ++(0,5pt) node[above] {$\scriptstyle \Xc \delta$};
-}
-
-\foreach \Xc/\texto in {7/(I-3)\delta,8/(I-2)\delta,9/(I-1)\delta,10/I\delta}
-{
-  \draw[black,thick] 
-    ( \Xc,0) -- ++(0,5pt) node[above] {$\scriptstyle \texto$};
-}
-
-\foreach \Xc/\texto in {0.5/\frac{1}{2},1.5/\frac{3}{2},2.5/\frac{5}{2},3.5/\frac{7}{2}}
-{
-  \draw[black,thick] 
-    ( \Xc,-.2) -- ++(0,5pt) node[below] {$\scriptstyle \texto \delta$};
-}
-\foreach \Xc/\texto in {6.5/(I-\frac{7}{2}),7.5/(I-\frac{5}{2}),8.5/(I-\frac{3}{2}),9.5/(I-\frac{1}{2}),10.5/(I+\frac{1}{2})}
-{
-  \draw[black,thick] 
-    ( \Xc,-.2) -- ++(0,5pt) node[below] {$\scriptstyle \texto \delta$};
-}
-  \fill[black] 
-    ([xshift=5pt]0,-0.75)  
-      rectangle node[below] {\strut\small i=0} 
-    ([xshift=-5pt]0.5,-0.85);  
-\foreach \Xc/\Texto in {0.5/i=1,1.5/i=2,2.5/i=3}
-{
-  \fill[black] 
-    ([xshift=5pt]\Xc,-0.75)  
-      rectangle node[below] {\strut\small\Texto} 
-    ([xshift=-5pt]\Xc+1,-0.85);  
-}
-\foreach \Xc/\Texto in {6.5/i=I-3,7.5/i=I-2,8.5/i=I-1,9.5/i=I}
-{
-  \fill[black] 
-    ([xshift=5pt]\Xc,-0.75)  
-      rectangle node[below] {\strut\small\Texto} 
-    ([xshift=-5pt]\Xc+1,-0.85);  
-}
-\end{tikzpicture} 
-}
-\end{center}
-\pause
-\item $d_{ij}=\begin{cases}1 & \text{if hh $j$ can report $0$, $i-1$ or $i$},\\
-0 & \text{otherwise.} \end{cases}$  ``intrinsic" income level
-\pause
-\item $h_{ijt}=\begin{cases}1\ & \text{hh $j$ reports $i$ in $t$},\\
-0 & \text{otherwise.} \end{cases}$ ``equilibrium" income level
-\end{itemize}
-\end{frame}
-
-\begin{frame}[label = empirical_relation]
-\frametitle{Identifying $\eta_i=\frac{\partial h_i}{\partial(c_i-c_0)}\frac{c_i-c_0}{h_i}$ and $\mathcal{E}_i=\frac{\partial h_i}{\partial(c_i-c_{i-1})}\frac{c_i-c_{i-1}}{h_i}$}
-\begin{itemize}
-\item $\bar{y}^*_{jt}=\sum_{i=1}^I \beta_i d_{ij}ln(c_i-c_{i-1})_{jt}+\sum_{i=1}^I \gamma_i d_{ij}ln(c_i-c_{0})_{jt}+\lambda_j+v_{jt}$\\
-\pause
-\item $\frac{\beta_i}{i\delta}=\mathcal{E}_i\text{ and }\frac{\gamma_i}{\delta}=\eta_i$
-\end{itemize}
-\hyperlink{proof_empirical}{\beamergotobutton{Link to Proof}}
-\pause
-\begin{block}
-
-\textbf{Identification Assumptions:} 
-\begin{enumerate}
-\item Reporting decisions would change in the same way with the reform across households with different household compositions.
-\item Elasticities vary across income levels but not across household composition.
-\end{enumerate}
-\end{block}
-\end{frame}
-
-
-
-\section{Implications for the Optimal Program}
-
-\begin{frame}[label=implications]
-\frametitle{Optimality of the Anti-Poverty Program}
-\begin{itemize}
-\pause
-\item If there are no fines $\Rightarrow$ elasticities of reported income are sufficient statistics
-\pause
-\item If there are fines $\Rightarrow$ elasticities of reported \underline{and real} income are sufficient statistics
-\pause
-\item These are elasticities \underline{under the optimal schedule}
-\pause
-\item The elasticities \underline{under the observed schedule} are sufficient statistics for the \underline{optimal reform}
-\end{itemize}
-\hyperlink{theory}{\beamergotobutton{Link to Discrete Model}}
-\hyperlink{imp}{\beamergotobutton{Link to the Government's Problem}}
-\hyperlink{prop_imp}{\beamergotobutton{Link to the Optimal Program}}
-\hyperlink{reform}{\beamergotobutton{Link to the Optimal Reform}}
+\frametitle{Benef\'icios}
+% Table generated by Excel2LaTeX from sheet 'Sheet1'
+\begin{table}[htbp]
+  \centering
+  \caption{Benef\'icio de 0 a 6}
+  \scalebox{0.6}{
+    \begin{tabular}{rrrrrrrr}
+    \toprule
+    idHh  & idInd & dta\_atual\_memb & dta\_nasc\_pessoa & idade (Cad) & rf\_folha & idade (Folha) & benefit0to6 \\
+    \midrule
+    389059 & 16052941988 & 2015-02-02 & 1995-04-04 & 19    & 2/1   & 19    & 35 \\
+    \bottomrule
+    \end{tabular}}
+\end{table}
 \end{frame}
 
 \begin{frame}
-\begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[x=.9,y=.9]
-\node[align=center, right] at (200,0) {$B_0$};
-\draw[->, very thick] (0,0) -- (200,0) ; %edit here for the x axis
-\node[align=center,  above] at (0,200) {$B_1$};
-\draw[->, very thick] (0,0) -- (0,200) ; %edit here for the y axis
-\draw (100,0) arc (-40:103:100);
-\node[black, align=center, below] at (20,178) {\scriptsize{$C^A$}};
-\draw (50,0) arc (-60:103:70);
-\node[black, align=center, below] at (20,145) {\scriptsize{$C^B$}};
-\node[black, align=center, below] at (150,145) {\scriptsize{$C^B<C^A$}};
-\pause
-\draw[black, -, dashed, thick] (70,0) -- (70,200) ;
-\node[black, align=center, below] at (70,0) {\scriptsize{$z$}};
-\pause
-\fill (70,63) circle (1.5);
-\node[black, align=center, left] at (70,63) {\scriptsize{$(B_0^*,B_1^*)$}};
-\pause
-\fill (112,17) circle (1.5);
-\node[black, align=center, right] at (112,17) {\scriptsize{$(B_0,B_1)$}};
-\pause
-\draw[->, very thick] (112,17) -- (90,30) ; %edit here for the x axis
-\node[black, align=center, above] at (94,30) {\scriptsize{$C^*=-\nabla C$}};
-\pause
-\fill (70,103) circle (1.5);
-\node[black, align=center, right] at (70,103) {\scriptsize{$(B'_0,B'_1)$}};
-\pause
-\draw[->, very thick] (70,103) -- (50,80) ; %edit here for the x axis
-\node[black, align=center, below] at (50,80) {\scriptsize{$-\nabla C$}};
-\pause
-\draw[->, very thick] (70,103) -- (70,80) ; %edit here for the x axis
-\node[black, align=center, below] at (75,80) {\scriptsize{$C*$}};
-
-\end{tikzpicture}
-\label{opt_reform}
-\end{center}
-\end{figure}
+\frametitle{Benef\'icios de 7 a 15 (muito novo)}
+\begin{table}[htbp]
+  \centering
+  \caption{Benef\'icio de 7 a 15}
+    \scalebox{0.6}{
+    \begin{tabular}{rrrrrrrr}
+    \toprule
+    idHh  & idInd & dta\_atual\_memb & dta\_nasc\_pessoa & idade (Cadunico) & dateFolha & idade (Folha) & benefit7to15 \\
+    \midrule
+    2793  & 16324772234 & 2011-02-01 & 2008-03-12 & 2     & 3/15 & 6     & 35 \\
+    \bottomrule
+    \end{tabular}}
+\end{table}% 
 \end{frame}
 
 \begin{frame}
-\frametitle{Recap}
+\frametitle{Benef\'icios de 7 a 15 (muito velho)}
+\begin{table}[htbp]
+  \centering
+  \caption{Benef\'icio de 7 a 15}
+      \scalebox{0.6}{
+    \begin{tabular}{rrrrrrrr}
+    \toprule
+    idHh  & idInd & dta\_nasc\_pessoa & dta\_atual\_memb & idade (Cad) & dateFolha & idade (Folha) & benefit7to15 \\
+    \midrule
+    38833 & 16038377272 & 1999-02-04 & 2015-02-04 & 16    & 2/1/15 & 16    & 35 \\
+    \bottomrule
+    \end{tabular}}
+\end{table}% 
+\end{frame}
+
+\begin{frame}
+\frametitle{\'Ultimas Perguntas}
 \begin{itemize}
-\pause
-\item Recover elasticities of reported and real income from bunching and reforms variation
-\pause
-\item Those elasticities are the sufficient statistics for the Optimal Anti-Poverty program
-\pause
-\item The optimal reform can be written as a function of elasticities under the observed schedule
+\item Como identificam nutrizes na base?
+\item Como identificam gr\'avidas na base?
+\item Como identificam gr\'avidas na base?
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+Muito obrigado!
 \end{frame}
 
 \appendix

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 FEB 2016 15:12
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 FEB 2016 09:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,583 +1182,307 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [13
 
-] (./Presentation.toc)
-[14
+] [14
 
-] (./Presentation.toc) [15
+] [15
 
-] (./Presentation.toc) [16
+] [16
 
-] (./Presentation.toc)
-[17
-
-] [18
-
-] [19
-
-] [20
-
-] [21
-
-] [22
+] [17
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 222.
+(./tab_selection.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 222.
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 222.
+line 1.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2012/04/26
-)
-Overfull \vbox (9.43312pt too high) detected at line 222
+)) [18
+
+] <Dom_060114_non_0_bin3p5.pdf, id=563, 397.485pt x 289.08pt>
+File: Dom_060114_non_0_bin3p5.pdf Graphic file (type pdf)
+
+<use Dom_060114_non_0_bin3p5.pdf>
+Package pdftex.def Info: Dom_060114_non_0_bin3p5.pdf used on input line 196.
+(pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
+
+Overfull \vbox (0.32481pt too high) detected at line 196
  []
 
+[19
+
+ <./Dom_060114_non_0_bin3p5.pdf>]
+<Dom_060114_non_2_bin3p5.pdf, id=601, 397.485pt x 289.08pt>
+File: Dom_060114_non_2_bin3p5.pdf Graphic file (type pdf)
+
+<use Dom_060114_non_2_bin3p5.pdf>
+Package pdftex.def Info: Dom_060114_non_2_bin3p5.pdf used on input line 206.
+(pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
+
+Overfull \vbox (0.32481pt too high) detected at line 206
+ []
+
+[20
+
+ <./Dom_060114_non_2_bin3p5.pdf>]
+<Rais_060114_non_0_bin3p5.pdf, id=638, 397.485pt x 289.08pt>
+File: Rais_060114_non_0_bin3p5.pdf Graphic file (type pdf)
+
+<use Rais_060114_non_0_bin3p5.pdf>
+Package pdftex.def Info: Rais_060114_non_0_bin3p5.pdf used on input line 215.
+(pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
+ [21
+
+ <./Rais_060114_non_0_bin3p5.pdf>]
+<Rais_060114_non_2_bin3p5.pdf, id=672, 397.485pt x 289.08pt>
+File: Rais_060114_non_2_bin3p5.pdf Graphic file (type pdf)
+
+<use Rais_060114_non_2_bin3p5.pdf>
+Package pdftex.def Info: Rais_060114_non_2_bin3p5.pdf used on input line 224.
+(pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
+ [22
+
+ <./Rais_060114_non_2_bin3p5.pdf>]
 [23
 
-]
-Overfull \vbox (9.43312pt too high) detected at line 222
- []
+] [24
 
-[24
+] [25
 
-]
-Overfull \vbox (9.43312pt too high) detected at line 222
- []
+] [26
 
-[25
+] [27
 
-]
-Overfull \vbox (9.43312pt too high) detected at line 222
- []
+] [28
 
-[26
-
-]
-Overfull \vbox (9.43312pt too high) detected at line 222
- []
-
-[27
-
-]
-Overfull \vbox (9.43312pt too high) detected at line 222
- []
-
-[28
-
-]
-Overfull \vbox (9.43312pt too high) detected at line 222
- []
-
-[29
+] [29
 
 ] [30
 
 ] [31
 
-] [32
-
-] (./tab_selection.tex) [33
-
 ]
-<Dom_060114_non_0_bin3p5.pdf, id=1040, 397.485pt x 289.08pt>
-File: Dom_060114_non_0_bin3p5.pdf Graphic file (type pdf)
 
-<use Dom_060114_non_0_bin3p5.pdf>
-Package pdftex.def Info: Dom_060114_non_0_bin3p5.pdf used on input line 263.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\translate ' on input line 332.
+
+\c@finalframe=\count186
+<Dom1_060114_non_0_bin3p5.pdf, id=968, 397.485pt x 289.08pt>
+File: Dom1_060114_non_0_bin3p5.pdf Graphic file (type pdf)
+
+<use Dom1_060114_non_0_bin3p5.pdf>
+Package pdftex.def Info: Dom1_060114_non_0_bin3p5.pdf used on input line 343.
 (pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
 
-Overfull \vbox (0.32481pt too high) detected at line 263
+Overfull \vbox (0.32481pt too high) detected at line 343
  []
 
-[34
+[32
 
- <./Dom_060114_non_0_bin3p5.pdf>]
-<Dom_060114_non_2_bin3p5.pdf, id=1077, 397.485pt x 289.08pt>
-File: Dom_060114_non_2_bin3p5.pdf Graphic file (type pdf)
+ <./Dom1_060114_non_0_bin3p5.pdf>]
+<Dom1_060114_non_2_bin3p5.pdf, id=1003, 397.485pt x 289.08pt>
+File: Dom1_060114_non_2_bin3p5.pdf Graphic file (type pdf)
 
-<use Dom_060114_non_2_bin3p5.pdf>
-Package pdftex.def Info: Dom_060114_non_2_bin3p5.pdf used on input line 273.
+<use Dom1_060114_non_2_bin3p5.pdf>
+Package pdftex.def Info: Dom1_060114_non_2_bin3p5.pdf used on input line 353.
 (pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
 
-Overfull \vbox (0.32481pt too high) detected at line 273
+Overfull \vbox (0.32481pt too high) detected at line 353
+ []
+
+[33
+
+ <./Dom1_060114_non_2_bin3p5.pdf>] [34
+
+]
+Overfull \vbox (14.13284pt too high) detected at line 400
  []
 
 [35
 
- <./Dom_060114_non_2_bin3p5.pdf>]
-<Rais_060114_non_0_bin3p5.pdf, id=1115, 397.485pt x 289.08pt>
-File: Rais_060114_non_0_bin3p5.pdf Graphic file (type pdf)
+]
+Overfull \vbox (14.13284pt too high) detected at line 400
+ []
 
-<use Rais_060114_non_0_bin3p5.pdf>
-Package pdftex.def Info: Rais_060114_non_0_bin3p5.pdf used on input line 282.
-(pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
- [36
+[36
 
- <./Rais_060114_non_0_bin3p5.pdf>]
-<Rais_060114_non_2_bin3p5.pdf, id=1147, 397.485pt x 289.08pt>
-File: Rais_060114_non_2_bin3p5.pdf Graphic file (type pdf)
+]
+Overfull \vbox (14.13284pt too high) detected at line 400
+ []
 
-<use Rais_060114_non_2_bin3p5.pdf>
-Package pdftex.def Info: Rais_060114_non_2_bin3p5.pdf used on input line 291.
-(pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
- [37
+[37
 
- <./Rais_060114_non_2_bin3p5.pdf>]
-Overfull \vbox (2.79324pt too high) detected at line 322
+]
+Overfull \vbox (14.13284pt too high) detected at line 400
  []
 
 [38
 
 ]
-Overfull \vbox (2.79324pt too high) detected at line 322
+Overfull \vbox (14.13284pt too high) detected at line 400
  []
 
 [39
 
 ]
-Overfull \vbox (2.79324pt too high) detected at line 322
+Overfull \vbox (14.13284pt too high) detected at line 400
  []
 
 [40
 
 ]
-Overfull \vbox (3.55408pt too high) detected at line 384
+Overfull \vbox (14.13284pt too high) detected at line 400
  []
 
 [41
 
-]
-Overfull \vbox (3.55408pt too high) detected at line 384
- []
+] [42
 
-[42
+] [43
 
-]
-Overfull \vbox (3.55408pt too high) detected at line 384
- []
+] [44
 
-[43
+] [45
 
-]
-Overfull \vbox (3.55408pt too high) detected at line 384
- []
+] [46
 
-[44
+] [47
 
-]
-Overfull \vbox (3.55408pt too high) detected at line 384
- []
+] [48
 
-[45
-
-]
-Overfull \vbox (3.55408pt too high) detected at line 384
- []
-
-[46
-
-]
-Overfull \vbox (3.55408pt too high) detected at line 384
- []
-
-[47
-
-]
-Overfull \vbox (3.55408pt too high) detected at line 384
- []
-
-[48
-
-]
-Overfull \vbox (3.55408pt too high) detected at line 384
- []
-
-[49
+] [49
 
 ] [50
 
 ] [51
 
-] [52
+]
+Overfull \vbox (7.4719pt too high) detected at line 518
+ []
 
-] [53
-
-] [54
+[52
 
 ]
-Overfull \vbox (9.46793pt too high) detected at line 453
+Overfull \vbox (7.4719pt too high) detected at line 518
+ []
+
+[53
+
+]
+Overfull \vbox (7.4719pt too high) detected at line 518
+ []
+
+[54
+
+]
+Overfull \vbox (7.4719pt too high) detected at line 518
  []
 
 [55
 
 ]
-Overfull \vbox (9.46793pt too high) detected at line 453
+Overfull \vbox (7.4719pt too high) detected at line 518
  []
 
 [56
 
 ]
-Overfull \vbox (9.46793pt too high) detected at line 453
+Overfull \vbox (7.4719pt too high) detected at line 518
  []
 
 [57
 
 ]
-Overfull \vbox (9.46793pt too high) detected at line 453
+Overfull \vbox (7.4719pt too high) detected at line 518
  []
 
 [58
 
 ]
-Overfull \vbox (9.46793pt too high) detected at line 453
+Overfull \vbox (7.4719pt too high) detected at line 518
  []
 
 [59
 
 ]
-Overfull \vbox (9.46793pt too high) detected at line 453
+Overfull \vbox (7.4719pt too high) detected at line 518
  []
 
 [60
 
-]
-Overfull \vbox (12.16791pt too high) detected at line 500
- []
+] [61
 
-[61
+] [62
 
-]
-Overfull \vbox (12.16791pt too high) detected at line 500
- []
+] [63
 
-[62
+] [64
 
-]
-Overfull \vbox (12.16791pt too high) detected at line 500
- []
+] [65
 
-[63
+] [66
+
+] [67
 
 ]
-Overfull \vbox (12.16791pt too high) detected at line 500
- []
-
-[64
-
-]
-Overfull \vbox (12.16791pt too high) detected at line 500
- []
-
-[65
-
-]
-Overfull \vbox (12.16791pt too high) detected at line 500
- []
-
-[66
-
-]
-Overfull \vbox (8.9469pt too high) detected at line 568
- []
-
-[67
-
-]
-Overfull \vbox (8.9469pt too high) detected at line 568
+Overfull \hbox (2.82816pt too wide) in paragraph at lines 584--584
+[]  
  []
 
 [68
 
-]
-Overfull \vbox (8.9469pt too high) detected at line 568
- []
+] [69
 
-[69
+] [70
 
-]
-Overfull \vbox (8.9469pt too high) detected at line 568
- []
-
-[70
-
-]
-Overfull \vbox (8.9469pt too high) detected at line 568
- []
-
-[71
+] [71
 
 ] [72
 
 ] [73
 
-] [74
-
-] [75
-
-] [76
-
-] [77
-
-] [78
-
-] [79
-
-] [80
-
-] [81
-
-] [82
-
-] [83
-
-] [84
-
-] [85
-
 ]
-[86
-
-] [87
-
-] [88
-
-] [89
-
-] [90
-
-] [91
-
-] [92
-
-] [93
-
-] [94
-
-] [95
-
-] [96
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 736.
-
-\c@finalframe=\count186
-<Dom1_060114_non_0_bin3p5.pdf, id=2991, 397.485pt x 289.08pt>
-File: Dom1_060114_non_0_bin3p5.pdf Graphic file (type pdf)
-
-<use Dom1_060114_non_0_bin3p5.pdf>
-Package pdftex.def Info: Dom1_060114_non_0_bin3p5.pdf used on input line 747.
-(pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
-
-Overfull \vbox (0.32481pt too high) detected at line 747
- []
-
-[97
-
- <./Dom1_060114_non_0_bin3p5.pdf>]
-<Dom1_060114_non_2_bin3p5.pdf, id=3027, 397.485pt x 289.08pt>
-File: Dom1_060114_non_2_bin3p5.pdf Graphic file (type pdf)
-
-<use Dom1_060114_non_2_bin3p5.pdf>
-Package pdftex.def Info: Dom1_060114_non_2_bin3p5.pdf used on input line 757.
-(pdftex.def)             Requested size: 268.30292pt x 195.12877pt.
-
-Overfull \vbox (0.32481pt too high) detected at line 757
- []
-
-[98
-
- <./Dom1_060114_non_2_bin3p5.pdf>] [99
-
-]
-Overfull \vbox (14.13284pt too high) detected at line 804
- []
-
-[100
-
-]
-Overfull \vbox (14.13284pt too high) detected at line 804
- []
-
-[101
-
-]
-Overfull \vbox (14.13284pt too high) detected at line 804
- []
-
-[102
-
-]
-Overfull \vbox (14.13284pt too high) detected at line 804
- []
-
-[103
-
-]
-Overfull \vbox (14.13284pt too high) detected at line 804
- []
-
-[104
-
-]
-Overfull \vbox (14.13284pt too high) detected at line 804
- []
-
-[105
-
-]
-Overfull \vbox (14.13284pt too high) detected at line 804
- []
-
-[106
-
-] [107
-
-] [108
-
-] [109
-
-] [110
-
-] [111
-
-] [112
-
-] [113
-
-] [114
-
-] [115
-
-] [116
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[117
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[118
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[119
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[120
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[121
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[122
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[123
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[124
-
-]
-Overfull \vbox (7.4719pt too high) detected at line 922
- []
-
-[125
-
-] [126
-
-] [127
-
-] [128
-
-] [129
-
-] [130
-
-] [131
-
-] [132
-
-]
-Overfull \hbox (2.82816pt too wide) in paragraph at lines 988--988
-[]  
- []
-
-[133
-
-] [134
-
-] [135
-
-] [136
-
-] [137
-
-] [138
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 104
-6.
-LaTeX Font Info:    No file OMScmss.fd. on input line 1046.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 642
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 642.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 1046.
+(Font)              for symbol `textbackslash' on input line 642.
 
-[139
+[74
 
-] [140
+] [75
 
 ]
-Overfull \vbox (2.28073pt too high) detected at line 1099
+Overfull \vbox (2.28073pt too high) detected at line 695
  []
 
-[141
+[76
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{extensive_in
 tuition}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1134 \end{frame}
-                  
-Overfull \vbox (15.88074pt too high) detected at line 1134
+l.730 \end{frame}
+                 
+Overfull \vbox (15.88074pt too high) detected at line 730
  []
 
-[142
+[77
 
-] [143
+] [78
 
 ]
 \tf@nav=\write6
@@ -1770,14 +1494,13 @@ Overfull \vbox (15.88074pt too high) detected at line 1134
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1155.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1155.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 751.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 751.
  (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1155.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1155.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 751.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 751.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 9BD1A6AEF608D13E6620061A4604CD26;268.
+(rerunfilecheck)             Checksum: DD24579F2B24C5124E97395FC69072C3;81.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1789,41 +1512,41 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1155.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 751.
  ) 
 Here is how much of TeX's memory you used:
- 21591 strings out of 493488
- 415736 string characters out of 3141326
- 526138 words of memory out of 3000000
- 23927 multiletter control sequences out of 15000+200000
- 25864 words of font info for 91 fonts, out of 3000000 for 9000
+ 21020 strings out of 493488
+ 405246 string characters out of 3141326
+ 498464 words of memory out of 3000000
+ 23536 multiletter control sequences out of 15000+200000
+ 20061 words of font info for 71 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 55i,20n,63p,418b,902s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.
-pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/lo
+ 55i,20n,57p,418b,901s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{discretized} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{implications} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{empirical_relation} has been referenced but does no
+t exist, replaced by a fixed one
+
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
+/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/l
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/l
-ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/l
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on Presentation.pdf (143 pages, 685400 bytes).
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Presentation.pdf (78 pages, 391278 bytes).
 PDF statistics:
- 4586 PDF objects out of 5155 (max. 8388607)
- 4356 compressed objects within 44 object streams
- 400 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2519 PDF objects out of 2984 (max. 8388607)
+ 2384 compressed objects within 24 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
